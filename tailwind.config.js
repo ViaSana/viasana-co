@@ -8,7 +8,7 @@ module.exports = {
     ],
     theme: {
         fontFamily: {
-            sans: ['Source Sans Pro', 'sans-serif'],
+            sans: ['sofia-pro-soft', 'sans-serif'],
             serif: ['Playfair Display', 'serif'],
         },
         extend: {
@@ -33,7 +33,10 @@ module.exports = {
             colors:{
                 'dark': '#a2745c',
                 'green': '#9b9b81',
-                'rust': '#d3b4a2'
+                'rust': '#d3b4a2',
+                'vs-blue': '#00BFFF',
+                'vs-grey': '#545060',
+                'vs-indigo': '#39008A',
             },
         },
     },
