@@ -8,8 +8,8 @@ module.exports = {
     ],
     theme: {
         fontFamily: {
-            sans: ['sofia-pro-soft', 'sans-serif'],
-            serif: ['Playfair Display', 'serif'],
+            sans: ['Source Sans 3', 'sans-serif'],
+            serif: ['Libre Bodoni', 'serif'],
         },
         extend: {
             spacing: {
@@ -32,8 +32,15 @@ module.exports = {
             },
             colors:{
                 'dark': '#a2745c',
-                'green': '#9b9b81',
                 'rust': '#d3b4a2',
+
+                'green': '#014B64',
+                'moonstone': '#014B64',
+                'magenta': '#731C53',
+                'thistle': '#CCBCDF',
+                'platinum': '#DDDEE0',
+                'grey': '#7C7d81',
+
                 'vs-blue': '#00BFFF',
                 'vs-grey': '#545060',
                 'vs-indigo': '#39008A',
