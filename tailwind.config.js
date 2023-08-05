@@ -31,19 +31,12 @@ module.exports = {
                 '50': '50vh',
             },
             colors:{
-                'dark': '#a2745c',
-                'rust': '#d3b4a2',
-
                 'green': '#014B64',
-                'moonstone': '#014B64',
+                'moonstone': '#3E97A1',
                 'magenta': '#731C53',
                 'thistle': '#CCBCDF',
                 'platinum': '#DDDEE0',
                 'grey': '#7C7d81',
-
-                'vs-blue': '#00BFFF',
-                'vs-grey': '#545060',
-                'vs-indigo': '#39008A',
             },
         },
     },

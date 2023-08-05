@@ -315,9 +315,13 @@ html, body {
         max-width: 100vw;
         overflow-x: hidden;
         scroll-behavior: smooth;
+
         font-family: 'Source Sans Pro', sans-serif;
         font-weight: 300;
-        color: rgb(60,60,60);
+        --tw-bg-opacity: 1;
+        background-color: rgb(221 222 224 / var(--tw-bg-opacity));
+        --tw-text-opacity: 1;
+        color: rgb(124 125 129 / var(--tw-text-opacity));
     }
 section {
   padding: 5%;
@@ -334,13 +338,17 @@ h2, h3, h4 {
 }
 h2 {
         font-size: 2.5rem;
+        font-family: Libre Bodoni, serif;
     }
 h3 {
         font-size: 1.8rem;
     }
 h4 {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+  font-family: Libre Bodoni, serif;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(204 188 223 / var(--tw-text-opacity));
 }
 p {
         font-weight: 300;   
@@ -467,6 +475,8 @@ footer a:hover, .bg-dark .button:hover {
 }
 .button {
   display: inline-block;
+  --tw-bg-opacity: 1;
+  background-color: rgb(1 75 100 / var(--tw-bg-opacity));
   padding: 0.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -494,6 +504,21 @@ footer a:hover, .bg-dark .button:hover {
 .bg-meeting {
         background-image: url('/assets/images/meeting.jpg');
     }
+.absolute {
+  position: absolute;
+}
+.relative {
+  position: relative;
+}
+.left-0 {
+  left: 0px;
+}
+.right-0 {
+  right: 0px;
+}
+.top-0 {
+  top: 0px;
+}
 .col-span-4 {
   grid-column: span 4 / span 4;
 }
@@ -510,6 +535,9 @@ footer a:hover, .bg-dark .button:hover {
 .grid {
   display: grid;
 }
+.aspect-\[5\/4\] {
+  aspect-ratio: 5/4;
+}
 .aspect-landscape {
   aspect-ratio: 2 / 1 ;
 }
@@ -525,11 +553,17 @@ footer a:hover, .bg-dark .button:hover {
 .min-h-70 {
   min-height: 70vh;
 }
+.w-\[80\%\] {
+  width: 80%;
+}
 .max-w-lg {
   max-width: 32rem;
 }
 .max-w-xl {
   max-width: 36rem;
+}
+.grow {
+  flex-grow: 1;
 }
 .grid-cols-12 {
   grid-template-columns: repeat(12, minmax(0, 1fr));
@@ -549,24 +583,23 @@ footer a:hover, .bg-dark .button:hover {
 .self-center {
   align-self: center;
 }
-.bg-dark {
-  --tw-bg-opacity: 1;
-  background-color: rgb(162 116 92 / var(--tw-bg-opacity));
-}
 .bg-green {
   --tw-bg-opacity: 1;
   background-color: rgb(1 75 100 / var(--tw-bg-opacity));
 }
-.bg-rust {
-  --tw-bg-opacity: 1;
-  background-color: rgb(211 180 162 / var(--tw-bg-opacity));
-}
 .bg-moonstone {
   --tw-bg-opacity: 1;
-  background-color: rgb(1 75 100 / var(--tw-bg-opacity));
+  background-color: rgb(62 151 161 / var(--tw-bg-opacity));
+}
+.bg-thistle {
+  --tw-bg-opacity: 1;
+  background-color: rgb(204 188 223 / var(--tw-bg-opacity));
 }
 .bg-contain {
   background-size: contain;
+}
+.bg-cover {
+  background-size: cover;
 }
 .bg-center {
   background-position: center;
@@ -601,9 +634,6 @@ footer a:hover, .bg-dark .button:hover {
 .text-right {
   text-align: right;
 }
-.font-serif {
-  font-family: Libre Bodoni, serif;
-}
 .font-sans {
   font-family: Source Sans 3, sans-serif;
 }
@@ -611,17 +641,20 @@ footer a:hover, .bg-dark .button:hover {
   font-size: 3.75rem;
   line-height: 1;
 }
-.text-vs-blue {
+.text-platinum {
   --tw-text-opacity: 1;
-  color: rgb(0 191 255 / var(--tw-text-opacity));
+  color: rgb(221 222 224 / var(--tw-text-opacity));
+}
+.text-thistle {
+  --tw-text-opacity: 1;
+  color: rgb(204 188 223 / var(--tw-text-opacity));
 }
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
-.text-thistle {
-  --tw-text-opacity: 1;
-  color: rgb(204 188 223 / var(--tw-text-opacity));
+.opacity-0 {
+  opacity: 0;
 }
 .icon-section img {
         max-width: 3rem;
@@ -650,6 +683,10 @@ footer a:hover, .bg-dark .button:hover {
 
 
 /* ----------- ADDITIONAL COMPONENTS  --------- */
+
+.hover\:opacity-100:hover {
+  opacity: 1;
+}
 
 @media not all and (min-width: 768px) {
   .max-md\:text-center {

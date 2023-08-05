@@ -9,14 +9,18 @@ seo:
     keywords:
     hide-from-google: false
 ---
+
+{% include site_header.html %}
+
 <section class="flex items-center bg-image bg-plant p-5p min-h-70">
     <div class="max-w-xl">
-        <h2> Website design & development that grows with your business </h2>   
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ex ut, eaque ratione amet neque ipsum? Cupiditate ipsam voluptatem quia corporis repellendus inventore perspiciatis illum totam nihil maiores! Molestiae, consequuntur?</p>
+        <h2>ViaSana brings Magic <br> to Movement Pros Online</h2>   
+        <p>We create a sense of wonder and possibility for our client's vision to come to life for their community.</p>
+        <div class="button">Explore Web Design Service</div>
     </div>
 </section> 
 
-<section class="p-8 text-center text-white bg-dark"> 
+<section class="p-8 text-center text-white bg-moonstone"> 
     <p> Sign up to our newsletter to access free design resources. -> </p>
 </section>
 
@@ -25,26 +29,15 @@ seo:
     <div class="text-center pb-5p col-span-full"> 
         <h2> Why Choose Us </h2>
     </div>
+
+    {% for item in site.data.why_choose_us.choose_us limit:4 %}
     <div class="col-span-4 md:col-span-1 sm:col-span-2">
-        <img src="assets/images/icons/flash.png">
-        <h4> Lightning Fast </h4>
-        <p> Porro earum iusto, officia fuga quae possimus, fugiat illum reprehenderit deserunt consectetur adipisicing elit.</p>
+        <img src="{{ item.icon }}"> 
+        <h4>{{ item.title }}</h4>
+        <p>{{ item.text }}</p>
     </div>
-    <div class="col-span-4 md:col-span-1 sm:col-span-2">
-        <img src="assets/images/icons/idea-2.svg">
-        <h4> Strategic Perspective </h4>
-        <p> Sit amet consectetur adipisicing elit. Quis libero dolor quod voluptatibus vel eos expedita.</p>
-    </div>
-    <div class="col-span-4 md:col-span-1 sm:col-span-2">
-        <img src="assets/images/icons/seo-tag.png">
-        <h4> Optimised for Google </h4>
-        <p> Veniam obcaecati porro earum iusto, officia fuga quae possimus, fugiat illum reprehenderit deserunt.</p>
-    </div>
-    <div class="col-span-4 md:col-span-1 sm:col-span-2">
-        <img src="assets/images/icons/dollar.svg">
-        <h4> Modern E-Commerce </h4>
-        <p> Lorem ipsum dolor consectetur adipisicing elit. Quis libero quod voluptatibus vel eos expedita.</p>
-    </div>
+    {% endfor %}
+
 </section>
 
 <!-- Dark intro section  -->
@@ -52,65 +45,65 @@ seo:
     <div class="col-span-full md:col-span-7 bg-image bg-meeting min-h-50"></div> 
     <div class="self-center col-span-full md:col-span-5 p-10p">
         <div>
-            <h2> More than just another agency. </h2>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nulla ipsam doloremque optio fugiat culpa. Repudiandae magnam numquam expedita, dolorum similique distinctio praesentium sint ad vero fugit rem explicabo fugiat.</p>
-            <p> Velit libero blanditiis ipsam similique. Autem dolorem, nobis ut magnam nulla hic beatae, amet est aperiam deleniti minima unde fuga? </p>
+            <h2>{{site.data.why_choose_us.agency_bio.title}} </h2>
+            <p>{{site.data.why_choose_us.agency_bio.bio}}</p>
         </div>
     </div>
 </section>
 
-<section class="text-center text-white bg-dark"> 
-    <h3> We have a community of over 3500 entrepreneurs.  </h3>
-    <a href="#" class="button"> Join the Facebook Community </a>
+<section class="text-center text-white bg-thistle"> 
+    <h3> Find us on Instagram  </h3>
+    <div>
+        <a href="#" class=""> Morgan </a>
+        <a href="#" class=""> Joseph </a>
+    </div>
 </section>
 
 <!-- Opening banner  -->
 <section class="flex justify-end text-center bg-image bg-plant-2 min-h-70" id="services">
     <div class="self-center max-w-lg text-right">
         <h2> Our Services </h2>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis libero dolor similique quod voluptatibus vel eos expedita, veniam obcaecati porro earum iusto, officia fuga quae possimus, fugiat illum reprehenderit deserunt.</p>
+        <p> From collaborating to understand your physical presence, messaging, and values, to optimizing each digital touchpoint, we create cohesive online spaces that reflect the heart of your business. Let's work together to carry your brand from offline to an engaging, results-driven website tailored to your community.</p>
     </div>
 </section>
 
 <!-- Grid of services  -->
 <section class="grid sm:grid-cols-3">
-    <div class="p-5p">
-        <h3> Design. </h3>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis libero dolor similique quod voluptatibus vel eos expedita, veniam obcaecati porro earum iusto, officia fuga quae possimus, fugiat illum reprehenderit deserunt.</p>
-    </div>
-    <div class="p-5p">
-        <h3> Build. </h3>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis libero dolor similique quod voluptatibus vel eos expedita, veniam obcaecati porro earum iusto, officia fuga quae possimus, fugiat illum reprehenderit deserunt.</p>
-    </div>
-    <div class="p-5p">
-        <h3> SEO. </h3>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis libero dolor similique quod voluptatibus vel eos expedita, veniam obcaecati porro earum iusto, officia fuga quae possimus, fugiat illum reprehenderit deserunt.</p>
-    </div>
+    
+    {% for service in site.data.why_choose_us.services limit:3%}
+        <div class="p-5p">
+            <h3>{{ service.title }}</h3>
+            <p>{{ service.description }}</p> 
+        </div>
+    {% endfor %}
+
 </section>
 
 <!-- Features / about blocks -->
-<section class="bg-rust">
-    <h2 class="text-center"> Recent Projects </h2>
+<section class="bg-green">
+    <h2 class="text-center text-platinum"> Recent Projects </h2>
     <div class="grid grid-cols-12">
         <div class="self-center sm:col-span-5 col-span-full p-5p">
-            <h3> Zen Studio Website </h3>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas unde quia explicabo illum, adipisci beatae nemo consectetur repellat ratione eius, repudiandae architecto eaque placeat velit cum, sint odit consequuntur ad?</p>
-            <a href="#" class="button"> Go to site </a>
+            <h4> Wisdom's Way </h4>
+            <p> Built for a holistic health and life coach. Through deep collaboration, we gained insight into her brand vision, target audience, and desired user experience. We brought her unique approach to mind-body wellness to life through intentional design choices and custom content. The site exudes an airy, wholistic aesthetic while also clearly communicating the coach's offerings. Lead generation elements like an email and contact forms enable visitors to easily engage further. This holistic coaching site exemplifies our process of fusing creative design with digital strategy to craft experiences that aesthetically and functionally achieve business goals.</p>
+            <a href="http://wisdoms-way.com" class="button"> Go to site </a>
         </div>
-        <div class="self-center sm:col-span-7 col-span-full p-5p">
-            <img src="/assets/images/placeholder-project.png" alt="project name by the collective">    
+        <div class="relative self-center sm:col-span-7 col-span-full p-5p">
+            <img src="assets/images/portfolio/ww.png" alt="wisdoms way project">
+            <div class="bg-cover bg-center aspect-[5/4] w-[80%] absolute top-0 right-0 opacity-0 hover:opacity-100" style="background-image: url(assets/images/portfolio/ww-2.png)"></div>    
         </div>
 
     </div>
     <div class="grid grid-cols-12 md:flex-row-reverse">
-        <div class="self-center sm:col-span-7 col-span-full p-5p">
-            <img src="/assets/images/placeholder-project.png" alt="project name by the collective">    
+        <div class="relative self-center sm:col-span-7 col-span-full p-5p">
+            <img src="assets/images/portfolio/yoga.png" alt="yoga studio project"> 
+            <div class="bg-cover bg-center aspect-[5/4] w-[80%] absolute top-0 left-0 opacity-0 hover:opacity-100" style="background-image: url(assets/images/portfolio/yoga-2.png)"></div>   
         </div>
         
         <div class="self-center sm:col-span-5 col-span-full p-5p">
-            <h3> Another Website Name </h3>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas unde quia explicabo illum, adipisci beatae nemo consectetur repellat ratione eius, repudiandae architecto eaque placeat velit cum, sint odit consequuntur ad?</p>
-            <a href="#" class="button"> Go to site </a>
+            <h4> Zen Yoga Studio </h4>
+            <p> This yoga studio website we developed as a portfolio project. While fabricated, it demonstrates our skills in strategizing, designing, and building custom sites optimized for specific client needs. For this yoga studio, we crafted a clean, modern website focused on providing schedule and membership information while reflecting the brand's zen, mindfulness-based culture. Thoughtful UX choices, responsive design, and purpose-built content came together to engage visitors. Though conceptual, projects like this yoga site showcase our process for collaborating with clients to bring their brand to life online through tailored web experiences.</p>
+            <a href="http://yoga.viasana.co" class="button"> Go to site </a>
         </div>
     </div>
 </section> 

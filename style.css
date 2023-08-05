@@ -10,9 +10,11 @@
         max-width: 100vw;
         overflow-x: hidden;
         scroll-behavior: smooth;
+
         font-family: 'Source Sans Pro', sans-serif;
         font-weight: 300;
-        color: rgb(60,60,60);
+        
+        @apply bg-platinum text-grey;
     }
 
     section {
@@ -33,6 +35,7 @@
 
     h2 {
         font-size: 2.5rem;
+        @apply font-serif;
     } 
     
     h3 {
@@ -40,7 +43,8 @@
     }
 
     h4 {
-        @apply text-lg;
+        @apply font-serif text-4xl text-thistle;
+
     }
 
     p {
@@ -80,7 +84,7 @@
 /* ----------- ADDITIONAL COMPONENTS  --------- */
 @layer components {
     .button {
-        @apply inline-block p-2 px-4;
+        @apply inline-block p-2 px-4 bg-green;
         text-decoration: none;
         border: 2px solid; 
         font-weight: 400;
