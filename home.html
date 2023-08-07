@@ -13,15 +13,23 @@ seo:
 {% include site_header.html %}
 
 <section class="flex items-center bg-image bg-plant p-5p min-h-70">
-    <div class="max-w-xl">
-        <h2>ViaSana brings Magic <br> to Movement Pros Online</h2>   
-        <p>We create a sense of wonder and possibility for our client's vision to come to life for their community.</p>
-        <div class="button">Explore Web Design Service</div>
+    <div class="max-w-lg">
+        <h2>ViaSana brings Magic to<br>Movement Pros Online</h2>   
+        <p class="pb-4">We create a sense of wonder and possibility for our client's vision to come to life for their community.</p>
+        <div class="my-2 button">Explore Web Design Service</div>
     </div>
 </section> 
 
 <section class="p-8 text-center text-white bg-moonstone"> 
     <p> Sign up to our newsletter to access free design resources. -> </p>
+    <form class="grid max-w-2xl mx-auto" method="post"> 
+        <input type="email" id="email" name="email" class="p-2 mb-2 text-center bg-transparent" placeholder="Your Email" />
+
+        <input type="hidden" name="inbox_key" value="contact-form">
+        <input type="text" name="_gotcha" style="display: none;">
+
+        <div class="m-2 text-center"> <input class="border button" type="submit" value="Subscribe"/> </div>
+    </form>
 </section>
 
 <!-- Icon Grid  -->
@@ -30,6 +38,7 @@ seo:
         <h2> Why Choose Us </h2>
     </div>
 
+    <!-- Loop that pulls in from "Why_Choose_Us" Data file (Icon, Title, and Text)-->
     {% for item in site.data.why_choose_us.choose_us limit:4 %}
     <div class="col-span-4 md:col-span-1 sm:col-span-2">
         <img src="{{ item.icon }}"> 
@@ -53,9 +62,15 @@ seo:
 
 <section class="text-center text-white bg-thistle"> 
     <h3> Find us on Instagram  </h3>
-    <div>
-        <a href="#" class=""> Morgan </a>
-        <a href="#" class=""> Joseph </a>
+    <div class="flex flex-row justify-center">
+        <div class="p-2">
+            <div class="w-20 h-20 mx-auto rounded-full bg-moonstone"></div>
+            <a href="#" class="p-6 text-3xl"> Morgan </a>
+        </div>
+        <div class="p-2">
+            <div class="w-20 h-20 mx-auto rounded-full bg-moonstone"></div>
+            <a href="#" class="p-6 text-3xl"> Joseph </a>
+        </div>
     </div>
 </section>
 
@@ -84,7 +99,7 @@ seo:
     <h2 class="text-center text-platinum"> Recent Projects </h2>
     <div class="grid grid-cols-12">
         <div class="self-center sm:col-span-5 col-span-full p-5p">
-            <h4> Wisdom's Way </h4>
+            <h4 class="text-thistle"> Wisdom's Way </h4>
             <p> Built for a holistic health and life coach. Through deep collaboration, we gained insight into her brand vision, target audience, and desired user experience. We brought her unique approach to mind-body wellness to life through intentional design choices and custom content. The site exudes an airy, wholistic aesthetic while also clearly communicating the coach's offerings. Lead generation elements like an email and contact forms enable visitors to easily engage further. This holistic coaching site exemplifies our process of fusing creative design with digital strategy to craft experiences that aesthetically and functionally achieve business goals.</p>
             <a href="http://wisdoms-way.com" class="button"> Go to site </a>
         </div>
@@ -101,7 +116,7 @@ seo:
         </div>
         
         <div class="self-center sm:col-span-5 col-span-full p-5p">
-            <h4> Zen Yoga Studio </h4>
+            <h4 class="text-thistle">Zen Yoga Studio</h4>
             <p> This yoga studio website we developed as a portfolio project. While fabricated, it demonstrates our skills in strategizing, designing, and building custom sites optimized for specific client needs. For this yoga studio, we crafted a clean, modern website focused on providing schedule and membership information while reflecting the brand's zen, mindfulness-based culture. Thoughtful UX choices, responsive design, and purpose-built content came together to engage visitors. Though conceptual, projects like this yoga site showcase our process for collaborating with clients to bring their brand to life online through tailored web experiences.</p>
             <a href="http://yoga.viasana.co" class="button"> Go to site </a>
         </div>

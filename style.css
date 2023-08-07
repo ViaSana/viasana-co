@@ -43,7 +43,7 @@
     }
 
     h4 {
-        @apply font-serif text-4xl text-thistle;
+        @apply font-serif text-4xl;
 
     }
 
