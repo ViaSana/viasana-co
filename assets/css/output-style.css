@@ -582,6 +582,18 @@ footer a:hover, .bg-dark .button:hover {
 .max-w-lg {
   max-width: 32rem;
 }
+.max-w-\[20vw\] {
+  max-width: 20vw;
+}
+.max-w-\[40vw\] {
+  max-width: 40vw;
+}
+.max-w-\[30vw\] {
+  max-width: 30vw;
+}
+.max-w-\[35vw\] {
+  max-width: 35vw;
+}
 .grow {
   flex-grow: 1;
 }
