@@ -1,17 +1,17 @@
 choose_us: 
-  - icon: assets/images/icons/flash.png 
+  - icon: assets/images/icons/fast-right-circle.svg 
     title: Lightning Fast
     text: Our team optimizes your website for speed, with lean code and efficient hosting so your pages load in the blink of an eye.
 
-  - icon: assets/images/icons/idea-2.svg
+  - icon: assets/images/icons/light-bulb-on.svg
     title: Strategic Design
     text: We take a holistic approach to understand your business goals and craft a website that's aesthetically stunning focused on telling your story.
 
-  - icon: assets/images/icons/seo-tag.png
+  - icon: assets/images/icons/laptop-fix.svg
     title: Easy Content Updates  
     text: Our intuitive CMS makes it easy for you to update content yourself anytime, no developer needed.
 
-  - icon: assets/images/icons/dollar.svg
+  - icon: assets/images/icons/globe.svg
     title: Modern Community
     text: We build on popular frameworks with an eye for responsive design, creating a website tailored to engage today's users.
 
@@ -31,7 +31,7 @@ agency_bio:
     Our team takes a personal approach to deeply understand each client’s business and community before designing a custom website strategy. With a design tailored to your brand and audience, SEO best practices, and optimization for user experience, we create websites that spread your message and drive results. Let's work together to craft an online presence you love.
 
 services:
-  - title: Dev.
+  - title: Development.
     description: We craft specialized solutions tailored to each client's unique technical needs, integrating custom functionality, applications and more.
   - title: Marketing.
     description: Our customized on-brand visual assets, iconography, color palettes, and fonts will bring your brand to life.

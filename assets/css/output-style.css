@@ -523,12 +523,6 @@ footer a:hover, .bg-dark .button:hover {
 .col-span-full {
   grid-column: 1 / -1;
 }
-.m-1 {
-  margin: 0.25rem;
-}
-.m-3 {
-  margin: 0.75rem;
-}
 .m-2 {
   margin: 0.5rem;
 }
@@ -558,17 +552,11 @@ footer a:hover, .bg-dark .button:hover {
 .aspect-landscape {
   aspect-ratio: 2 / 1 ;
 }
-.h-screen {
-  height: 100vh;
-}
-.h-6 {
-  height: 1.5rem;
-}
-.h-12 {
-  height: 3rem;
-}
 .h-20 {
   height: 5rem;
+}
+.h-screen {
+  height: 100vh;
 }
 .max-h-\[30vw\] {
   max-height: 30vw;
@@ -579,17 +567,14 @@ footer a:hover, .bg-dark .button:hover {
 .min-h-70 {
   min-height: 70vh;
 }
-.w-\[80\%\] {
-  width: 80%;
-}
-.w-6 {
-  width: 1.5rem;
-}
-.w-12 {
-  width: 3rem;
+.min-h-\[220px\] {
+  min-height: 220px;
 }
 .w-20 {
   width: 5rem;
+}
+.w-\[80\%\] {
+  width: 80%;
 }
 .max-w-2xl {
   max-width: 42rem;
@@ -608,9 +593,6 @@ footer a:hover, .bg-dark .button:hover {
 }
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 .flex-row {
   flex-direction: row;
@@ -678,11 +660,15 @@ footer a:hover, .bg-dark .button:hover {
 .p-5p {
   padding: 5%;
 }
+.p-6 {
+  padding: 1.5rem;
+}
 .p-8 {
   padding: 2rem;
 }
-.p-6 {
-  padding: 1.5rem;
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
 }
 .pb-0 {
   padding-bottom: 0px;
@@ -696,9 +682,6 @@ footer a:hover, .bg-dark .button:hover {
 .pt-5p {
   padding-top: 5%;
 }
-.text-left {
-  text-align: left;
-}
 .text-center {
   text-align: center;
 }
@@ -708,16 +691,17 @@ footer a:hover, .bg-dark .button:hover {
 .font-sans {
   font-family: Source Sans 3, sans-serif;
 }
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
-}
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
-.uppercase {
-  text-transform: uppercase;
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+.text-green {
+  --tw-text-opacity: 1;
+  color: rgb(1 75 100 / var(--tw-text-opacity));
 }
 .text-platinum {
   --tw-text-opacity: 1;
@@ -773,6 +757,18 @@ footer a:hover, .bg-dark .button:hover {
 }
 
 @media not all and (min-width: 640px) {
+  .max-sm\:order-1 {
+    order: 1;
+  }
+  .max-sm\:order-2 {
+    order: 2;
+  }
+  .max-sm\:flex-row-reverse {
+    flex-direction: row-reverse;
+  }
+  .max-sm\:flex-col-reverse {
+    flex-direction: column-reverse;
+  }
   .max-sm\:text-center {
     text-align: center;
   }
