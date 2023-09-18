@@ -3,6 +3,10 @@
         {
             "filePath": "_data/site-settings.yml",
             "group": "Default"
+        },
+        {
+            "filePath": "style.css",
+            "group": "Default"
         }
     ]
 }

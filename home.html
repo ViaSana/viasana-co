@@ -14,12 +14,13 @@ seo:
 
 <section class="flex items-center bg-image bg-plant p-5p min-h-70">
     <div class="max-w-lg">
-        <h2>ViaSana brings Magic to<br>Movement Pros Online</h2>   
-        <p class="pb-4">We create a sense of wonder and possibility for our client's vision to come to life for their community.</p>
-        <div class="my-2 button"><a href="#">Explore Web Design Services</a></div>
+        <h2 class="text-green">ViaSana brings Magic to<br>Movement Pros Online</h2>   
+        <p class="max-w-[390px]">We create a sense of wonder and possibility for our client's vision to come to life for their community.</p>
+        <div class="my-2 button bg-green"><a href="#">Explore Web Design Services</a></div>
     </div>
 </section> 
 
+<!--- Email Subscriber Form ---
 <section class="p-8 text-center text-white bg-moonstone"> 
     <p> Sign up to our newsletter to access free design resources.</p>
     <form class="grid max-w-2xl mx-auto" method="post"> 
@@ -30,19 +31,25 @@ seo:
 
         <div class="m-2 text-center"> <input class="border button" type="submit" value="Subscribe"/> </div>
     </form>
+</section> 
+-->
+
+<section class="p-8 text-center text-platinum bg-moonstone"> 
+    <p> Quote about ViaSana.co</p>
+    
 </section>
 
 <!-- Icon Grid  -->
-<section class="grid grid-cols-4 text-center icon-section" id="why-us">
-    <div class="pb-4 text-center col-span-full"> 
+<section class="grid grid-cols-2 text-center icon-section" id="why-us">
+    <div class="pb-4 text-center col-span-full text-magenta"> 
         <h2> Why Choose Us </h2>
     </div>
 
     <!-- Loop that pulls in from "Why_Choose_Us" Data file (Icon, Title, and Text)-->
     {% for item in site.data.why_choose_us.choose_us limit:4 %}
-    <div class="col-span-4 md:col-span-1 sm:col-span-2 min-h-[220px]">
+    <div class="col-span-2 sm:col-span-1 min-h-[220px]">
         <img src="{{ item.icon }}"> 
-        <h4 class="px-1 text-green">{{ item.title }}</h4>
+        <h4 class="px-1 text-magenta">{{ item.title }}</h4>
         <p class="p-2">{{ item.text }}</p>
     </div>
     {% endfor %}
@@ -50,16 +57,18 @@ seo:
 </section>
 
 <!-- Dark intro section  -->
-<section class="grid grid-cols-12 text-white bg-green">
-    <div class="col-span-full md:col-span-7 bg-image bg-meeting min-h-50"></div> 
-    <div class="self-center col-span-full md:col-span-5 p-10p">
+<section class="grid grid-cols-12 text-platinum bg-magenta">
+    <div class="col-span-full md:col-span-5 bg-image bg-meeting min-h-50"></div> 
+    <div class="self-center col-span-full md:col-span-7 p-10p">
         <div>
-            <h2>{{site.data.why_choose_us.agency_bio.title}} </h2>
-            <p>{{site.data.why_choose_us.agency_bio.bio}}</p>
+            <h2 class="pb-4">Hi there! We're Morgan and Joseph</h2>
+            <p>As movement teachers and digital strategists, we're passionate about helping mind-body businesses share their message and grow online. We started ViaSana to combine our expertise in design, development, and communications to create websites that aesthetically reflect our clients' brands while converting visitors to customers.</p>
+            <p>Our team takes a personal approach to deeply understand each client’s business and community before designing a custom website strategy. With a design tailored to your brand and audience, SEO best practices, and optimization for user experience, we create websites that spread your message and drive results. Let's work together to craft an online presence you love.</p>
         </div>
     </div>
 </section>
 
+<!-- Find us on Instagram Section
 <section class="text-center text-white bg-thistle"> 
     <h3> Find us on Instagram  </h3>
     <div class="flex flex-row justify-center">
@@ -72,22 +81,28 @@ seo:
             <a href="#" class="p-6 text-3xl"> Joseph </a>
         </div>
     </div>
-</section>
+</section> 
+-->
+<section class="text-center text-platinum bg-thistle"> 
+    <h3 class="text-green"> Don't wait to make your dream a reality  </h3>
+    <div class="button"> Contact Us Now</div>
+    
+</section> 
 
 <!-- Opening banner  -->
-<section class="flex justify-end text-center bg-image bg-plant-2 min-h-70" id="services">
-    <div class="self-center max-w-lg text-right">
+<section class="flex justify-end text-right bg-image bg-plant-2 min-h-70" id="services">
+    <div class="self-center max-w-lg">
         <h2 class="text-green"> Our Services </h2>
-        <p class="text-green"> From collaborating to understand your physical presence, messaging, and values, to optimizing each digital touchpoint, we create cohesive online spaces that reflect the heart of your business. Let's work together to carry your brand from offline to an engaging, results-driven website tailored to your community.</p>
+        <p class="text-grey max-w-[390px]"> From collaborating to understand your physical presence, messaging, and values, to optimizing each digital touchpoint, we create cohesive online spaces that reflect the heart of your business. Let's work together to carry your brand from offline to an engaging, results-driven website tailored to your community.</p>
     </div>
 </section>
 
 <!-- Grid of services  -->
-<section class="grid sm:grid-cols-3">
+<section class="grid sm:grid-cols-3 bg-moonstone">
     
     {% for service in site.data.why_choose_us.services limit:3%}
-        <div class="p-5p">
-            <h3>{{ service.title }}</h3>
+        <div class="p-5p text-platinum">
+            <h4 >{{ service.title }}</h4>
             <p>{{ service.description }}</p> 
         </div>
     {% endfor %}
@@ -95,12 +110,12 @@ seo:
 </section>
 
 <!-- Features / about blocks -->
-<section class="bg-green">
-    <h2 class="text-center text-platinum"> Recent Projects </h2>
+<section class="">
+    <h2 class="text-center text-green"> Recent Projects </h2>
     <div class="grid grid-cols-12">
         <div class="self-center sm:col-span-5 col-span-full p-5p max-sm:order-2">
-            <h4 class="text-thistle"> Wisdom's Way </h4>
-            <p class="text-platinum"> Built for a holistic health and life coach. Through deep collaboration, we gained insight into her brand vision, target audience, and desired user experience. We brought her unique approach to mind-body wellness to life through intentional design choices and custom content. The site exudes an airy, wholistic aesthetic while also clearly communicating the coach's offerings. Lead generation elements like an email and contact forms enable visitors to easily engage further. This holistic coaching site exemplifies our process of fusing creative design with digital strategy to craft experiences that aesthetically and functionally achieve business goals.</p>
+            <h3 class="text-green"> Wisdom's Way </h3>
+            <p class="text-grey"> Built for a holistic health and life coach. Through deep collaboration, we gained insight into her brand vision, target audience, and desired user experience. We brought her unique approach to mind-body wellness to life through intentional design choices and custom content. The site exudes an airy, wholistic aesthetic while also clearly communicating the coach's offerings. Lead generation elements like an email and contact forms enable visitors to easily engage further. This holistic coaching site exemplifies our process of fusing creative design with digital strategy to craft experiences that aesthetically and functionally achieve business goals.</p>
             <a href="http://wisdoms-way.com" class="button"> Go to site </a>
         </div>
         <div class="relative self-center sm:col-span-7 col-span-full p-5p ">
@@ -116,10 +131,12 @@ seo:
         </div>
         
         <div class="self-center sm:col-span-5 col-span-full p-5p">
-            <h4 class="text-thistle">Zen Yoga Studio</h4>
-            <p class="text-platinum"> This yoga studio website we developed as a portfolio project. While fabricated, it demonstrates our skills in strategizing, designing, and building custom sites optimized for specific client needs. For this yoga studio, we crafted a clean, modern website focused on providing schedule and membership information while reflecting the brand's zen, mindfulness-based culture. Thoughtful UX choices, responsive design, and purpose-built content came together to engage visitors. Though conceptual, projects like this yoga site showcase our process for collaborating with clients to bring their brand to life online through tailored web experiences.</p>
+            <h3 class="text-green">Zen Yoga Studio</h3>
+            <p class="text-grey"> This yoga studio website we developed as a portfolio project. While fabricated, it demonstrates our skills in strategizing, designing, and building custom sites optimized for specific client needs. For this yoga studio, we crafted a clean, modern website focused on providing schedule and membership information while reflecting the brand's zen, mindfulness-based culture. Thoughtful UX choices, responsive design, and purpose-built content came together to engage visitors. Though conceptual, projects like this yoga site showcase our process for collaborating with clients to bring their brand to life online through tailored web experiences.</p>
             <a href="http://yoga.viasana.co" class="button"> Go to site </a>
         </div>
     </div>
 </section> 
+
+{% include site_footer.html %}
 

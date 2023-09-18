@@ -36,7 +36,7 @@ module.exports = {
                 'magenta': '#731C53',
                 'thistle': '#CCBCDF',
                 'platinum': '#DDDEE0',
-                'grey': '#7C7d81',
+                'grey': '#47494e',
             },
         },
     },
