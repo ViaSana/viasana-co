@@ -631,6 +631,10 @@ footer a:hover, .bg-dark .button:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(1 75 100 / var(--tw-bg-opacity));
 }
+.bg-grey {
+  --tw-bg-opacity: 1;
+  background-color: rgb(71 73 78 / var(--tw-bg-opacity));
+}
 .bg-magenta {
   --tw-bg-opacity: 1;
   background-color: rgb(115 28 83 / var(--tw-bg-opacity));
@@ -645,10 +649,6 @@ footer a:hover, .bg-dark .button:hover {
 }
 .bg-transparent {
   background-color: transparent;
-}
-.bg-grey {
-  --tw-bg-opacity: 1;
-  background-color: rgb(71 73 78 / var(--tw-bg-opacity));
 }
 .bg-contain {
   background-size: contain;
