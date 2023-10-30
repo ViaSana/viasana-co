@@ -39,6 +39,26 @@ seo:
     
 </section>
 
+<!-- Opening banner  -->
+<section class="flex justify-end text-right bg-image bg-plant-2 min-h-70" id="services">
+    <div class="self-center max-w-lg">
+        <h2 class="text-green"> Our Services </h2>
+        <p class="text-grey max-w-[390px]"> From collaborating to understand your physical presence, messaging, and values, to optimizing each digital touchpoint, we create cohesive online spaces that reflect the heart of your business. Let's work together to carry your brand from offline to an engaging, results-driven website tailored to your community.</p>
+    </div>
+</section>
+
+<!-- Grid of services  -->
+<section class="grid sm:grid-cols-3 bg-moonstone">
+    
+    {% for service in site.data.why_choose_us.services limit:3%}
+        <div class="p-5p text-platinum">
+            <h4 >{{ service.title }}</h4>
+            <p>{{ service.description }}</p> 
+        </div>
+    {% endfor %}
+
+</section>
+
 <!-- Icon Grid  -->
 <section class="grid grid-cols-2 text-center icon-section" id="why-us">
     <div class="pb-4 text-center col-span-full text-magenta"> 
@@ -89,25 +109,7 @@ seo:
     
 </section> 
 
-<!-- Opening banner  -->
-<section class="flex justify-end text-right bg-image bg-plant-2 min-h-70" id="services">
-    <div class="self-center max-w-lg">
-        <h2 class="text-green"> Our Services </h2>
-        <p class="text-grey max-w-[390px]"> From collaborating to understand your physical presence, messaging, and values, to optimizing each digital touchpoint, we create cohesive online spaces that reflect the heart of your business. Let's work together to carry your brand from offline to an engaging, results-driven website tailored to your community.</p>
-    </div>
-</section>
 
-<!-- Grid of services  -->
-<section class="grid sm:grid-cols-3 bg-moonstone">
-    
-    {% for service in site.data.why_choose_us.services limit:3%}
-        <div class="p-5p text-platinum">
-            <h4 >{{ service.title }}</h4>
-            <p>{{ service.description }}</p> 
-        </div>
-    {% endfor %}
-
-</section>
 
 <!-- Features / about blocks -->
 <section class="">
