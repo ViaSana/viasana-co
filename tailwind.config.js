@@ -39,10 +39,10 @@ module.exports = {
                 "primary": "#014b64",
                 "secondary": "#3e97a1",
                 "accent": "#731c53",
-                "neutral": "#3d4451",
+                "neutral": "#47494e", 
                 "base-100": "#DDDEE0",
                 "info": "#ccbcdf",
-                "success":"#47494e",
+                "success":"#3d4451",
             }
             },
         ],
