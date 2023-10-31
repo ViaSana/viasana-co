@@ -1,0 +1,18 @@
+<!-- include contact_form -->
+<div class="p-5p" id="contact">
+  <h2 class="mb-6 text-center uppercase editable">Contact Us</h2>
+
+  <form class="grid max-w-2xl mx-auto" method="post"> 
+      <input type="text" id="name" name="name" class="p-2 mb-2 bg-transparent border-b" placeholder="Name" />
+      
+      <input type="email" id="email" name="email" class="p-2 mb-2 bg-transparent border-b" placeholder="Email" />
+
+      <label for="message" class="mt-4 ml-2"> Message </label>
+      <textarea id="message" name="message" class="p-2 mb-8 bg-transparent border"></textarea>
+
+      <input type="hidden" name="inbox_key" value="contact-form">
+      <input type="text" name="_gotcha" style="display: none;">
+
+      <div class="text-right"> <input class="border button" type="submit" value="submit" id="submitBtn"/> </div>
+  </form>
+</div>

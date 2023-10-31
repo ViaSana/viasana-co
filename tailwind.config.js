@@ -30,17 +30,25 @@ module.exports = {
                 '60': '60vh',
                 '50': '50vh',
             },
-            colors:{
-                'green': '#014B64',
-                'moonstone': '#3E97A1',
-                'magenta': '#731C53',
-                'thistle': '#CCBCDF',
-                'platinum': '#DDDEE0',
-                'grey': '#47494e',
-            },
         },
+    },
+    daisyui: {
+        themes: [
+            {
+            mytheme: {
+                "primary": "#014b64",
+                "secondary": "#3e97a1",
+                "accent": "#731c53",
+                "neutral": "#3d4451",
+                "base-100": "#DDDEE0",
+                "info": "#ccbcdf",
+                "success":"#47494e",
+            }
+            },
+        ],
     },
     plugins: [
         require('@tailwindcss/typography'),
+        require("daisyui"),
     ],
 }

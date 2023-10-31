@@ -1,0 +1,28 @@
+paths:
+  uploads: assets/uploads
+  data: _data
+  layouts: _layouts
+  includes: _includes
+
+collections_config:
+  data:
+    path: _data
+    output: false
+    icon: notes
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+  packages:
+    path: _packages
+    output: false
+    icon: notes
+
+_inputs:
+
+_select_data:
+  data_config:
+    site-settings:
+_structures: {}
+_editables: {}
+data_config: {}
+timezone: America/Los_Angeles
