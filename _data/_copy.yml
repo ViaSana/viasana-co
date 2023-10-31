@@ -1,0 +1,40 @@
+section_1:
+  h2: Welcome to ViaSana
+  h1: A Website Design and Development Co-Op for Coaches, Yoga Studios, and Wellness Brands
+  h3: Crafting Digital Magic that Illuminates Your Online Presence.
+  btn:
+    text: Explore Web Design Services
+    link:         
+
+section_2:
+  # on page
+
+section_3:
+  h2: Our Services  
+  p_1: |
+    At ViaSana, we're not just a web development service; we're a web development co-op, a harmonious blend of technical expertise and a touch of magic. We believe in the power of collaboration, working closely with you to understand your physical presence, messaging, and values. Our cooperative approach ensures that your website isn't just a technical creation; it's a reflection of your business's heart and soul.
+    <br><br>
+    Let's embark on a journey together to bring your brand to an engaging, results-driven website tailored to your community.
+  btn:
+    text: Get Started
+  
+section_4:    
+  # Why_Choose_Us.YML
+
+section_5:
+  h2: Meet the Magic Makers
+  p_1: |
+    Hi there - We’re Morgan and Joseph. As movement teachers and digital strategists, we're passionate about helping mind-body businesses share their message and grow online. We founded ViaSana with a shared passion: to empower mind-body businesses like yours.
+  p_2: |
+    Our expertise in design, development, and communication is the foundation of websites that don't just look great but also convert visitors into loyal customers. Our secret sauce is our personal touch. We take the time to deeply understand your unique business and the community you serve before tailoring a custom website strategy. The end result? A website that's as unique as your brand, optimized for SEO, and built for an exceptional user experience.
+
+section_6:
+  h2: Featured Projects
+  
+  h3_a: Wisdom’s Way
+  p_1: |  
+    Wisdom's Way radiates soft, warm hues, bringing her unique coaching offerings to life. We collaborated closely with Lisa from the ground up, rebuilding her Squarespace website with custom code and design, hand-picking colors, and offering assistance with copywriting. The result is a holistic coaching site that exemplifies our process of fusing creative design with digital strategy to achieve both aesthetic and functional business goals.
+  
+  h3_b: Indie Yoga Studio
+  p_2: |
+    Indie Yoga is a testament to our versatility. We not only moved their website from WordPress to a custom-coded platform but also orchestrated a complete overhaul of their website design. Indie embodies a sleek, modern aesthetic that beautifully captures the comfort their studio provides. The site showcases their class offerings, seamlessly integrates with their Walla booking service, and is a prime example of our ability to transform and elevate web experiences.

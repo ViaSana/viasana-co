@@ -10,8 +10,9 @@ seo:
     hide-from-google: false
 ---
 
-{% include site_header.html %}
+{% include site_nav.html %}
 
+<!-- Section 1: Welcome Hero -->
 <section class="flex items-center bg-image bg-laptop p-5p min-h-90 mx-scrn">
     <div class="max-w-lg text-primary">
         <div class="font-serif text-xl mb-2">{{site.data.site_copy.section_1.h2_1}}</div>
@@ -21,11 +22,11 @@ seo:
     </div>
 </section> 
 
-<!-- Section 2 -->
+<!-- Section 2: Define ViaSana -->
 <section class="bg-secondary" >
     <div class="grid grid-cols-2 mx-scrn">
         <div class="text-center border-r-2 border-neutral p-5p">
-            <h2 class="uppercase tracking-[.2em]"><span>ViaSana</span> pronounced 'Vee-uh-Sah-nuh.’</h2>
+            <h2><span class="tracking-wider text-accent">ViaSana</span> pronounced <br>'Vee-uh-Sah-nuh.’</h2>
         </div>
 
         <div class="p-5p">
@@ -34,86 +35,65 @@ seo:
     </div>
 </section>
 
-<!-- Opening banner  -->
-<section class="flex justify-end text-right bg-image bg-laptop-2 min-h-70" id="services">
-    <div class="self-center max-w-lg">
-        <h2 class="text-primary"> Our Services </h2>
-        <p class="text-success max-w-[390px]"> From collaborating to understand your physical presence, messaging, and values, to optimizing each digital touchpoint, we create cohesive online spaces that reflect the heart of your business. Let's work together to carry your brand from offline to an engaging, results-driven website tailored to your community.</p>
+<!-- Section 3: Services  -->
+<section class="flex justify-end text-right bg-center bg-no-repeat max-h-[1024px]" id="services" style="background-image: url('/assets/images/laptop-2.png');">
+    <div class="self-center max-w-sm">
+        <h2 class="text-primary">{{site.data._copy.section_3.h2}}</h2>
+        <p class="">{{site.data._copy.section_3.p_1}}</p>
+        <a role="button" class="btn">{{site.data._copy.section_3.btn.text}}</a>
     </div>
 </section>
 
-<!-- Grid of services  -->
+    <!-- Service Grid  -->
 <section class="grid sm:grid-cols-3 bg-secondary">
-    
-    {% for service in site.data.why_choose_us.services limit:3%}
+    {% for service in site.data.why-choose-us.services %}
         <div class="p-5p text-base-100">
-            <h4 >{{ service.title }}</h4>
+            <h4>{{ service.title }}</h4>
             <p>{{ service.description }}</p> 
         </div>
     {% endfor %}
-
 </section>
 
-<!-- Icon Grid  -->
+<!-- Section 4: Why Choose Us + Icon Grid  -->
 <section class="grid grid-cols-2 text-center icon-section" id="why-us">
-    <div class="pb-4 text-center col-span-full text-accent"> 
-        <h2> Why Choose Us </h2>
-    </div>
+    <h2 class="text-accent col-span-full">Why Choose Us</h2>
 
-    <!-- Loop that pulls in from "Why_Choose_Us" Data file (Icon, Title, and Text)-->
-    {% for item in site.data.why_choose_us.choose_us limit:4 %}
+    <!-- Loop for "why-choose-us.yml" (Icon, Title, and Text) -->
+    {% for item in site.data.why-choose-us.choose_us limit:4 %}
     <div class="col-span-2 sm:col-span-1 min-h-[220px]">
         <img src="{{ item.icon }}"> 
         <h4 class="px-1 text-accent">{{ item.title }}</h4>
         <p class="p-2">{{ item.text }}</p>
     </div>
     {% endfor %}
-
 </section>
 
-<!-- Dark intro section  -->
+<!-- Section 5: Intro  -->
 <section class="grid grid-cols-12 text-base-100 bg-accent">
     <div class="col-span-full md:col-span-5 bg-image bg-meeting min-h-50"></div> 
     <div class="self-center col-span-full md:col-span-7 p-10p">
         <div>
-            <h2 class="pb-4">Hi there! We're Morgan and Joseph</h2>
-            <p>As movement teachers and digital strategists, we're passionate about helping mind-body businesses share their message and grow online. We started ViaSana to combine our expertise in design, development, and communications to create websites that aesthetically reflect our clients' brands while converting visitors to customers.</p>
-            <p>Our team takes a personal approach to deeply understand each client’s business and community before designing a custom website strategy. With a design tailored to your brand and audience, SEO best practices, and optimization for user experience, we create websites that spread your message and drive results. Let's work together to craft an online presence you love.</p>
+            <h2 class="pb-4">{{site.data._copy.section_5.h2}}</h2>
+            <p>{{site.data._copy.section_5.p_1}}</p>
+            <p>{{site.data._copy.section_5.p_2}}</p>
         </div>
     </div>
 </section>
 
-<!-- Find us on Instagram Section
-<section class="text-center text-white bg-info"> 
-    <h3> Find us on Instagram  </h3>
-    <div class="flex flex-row justify-center">
-        <div class="p-2">
-            <div class="w-20 h-20 mx-auto rounded-full bg-secondary"></div>
-            <a href="#" class="p-6 text-3xl"> Morgan </a>
-        </div>
-        <div class="p-2">
-            <div class="w-20 h-20 mx-auto rounded-full bg-secondary"></div>
-            <a href="#" class="p-6 text-3xl"> Joseph </a>
-        </div>
-    </div>
-</section> 
--->
+<!-- Contact CTA -->
 <section class="text-center text-base-100 bg-info"> 
-    <h3 class="text-primary"> Don't wait to make your dream a reality  </h3>
-    <div class="button"><a href="/home#contact">Contact Us Now</a></div>
-    
+    <h3 class="text-primary">Don't wait to make your dream a reality</h3>
+    <a role="button" class="btn" href="/home#contact">Contact Us Now</a>
 </section> 
 
-
-
-<!-- Features / about blocks -->
-<section class="">
-    <h2 class="text-center text-primary"> Recent Projects </h2>
+<!-- Section 6: Featured Projects -->
+<section>
+    <h2 class="text-center text-primary">{{site.data._copy.section_6.h2}}</h2>
     <div class="grid grid-cols-12">
         <div class="self-center sm:col-span-5 col-span-full p-5p max-sm:order-2">
-            <h3 class="text-primary"> Wisdom's Way </h3>
-            <p class="text-success"> Built for a holistic health and life coach. Through deep collaboration, we gained insight into her brand vision, target audience, and desired user experience. We brought her unique approach to mind-body wellness to life through intentional design choices and custom content. The site exudes an airy, wholistic aesthetic while also clearly communicating the coach's offerings. Lead generation elements like an email and contact forms enable visitors to easily engage further. This holistic coaching site exemplifies our process of fusing creative design with digital strategy to craft experiences that aesthetically and functionally achieve business goals.</p>
-            <a href="http://wisdoms-way.com" class="button"> Go to site </a>
+            <h3 class="text-primary">{{site.data._copy.section_6.h3_a}}</h3>
+            <p class="text-success">{{site.data._copy.section_6.p_1}}</p>
+            <a href="http://wisdoms-way.com" role="button" class="btn">Go to site</a>
         </div>
         <div class="relative self-center sm:col-span-7 col-span-full p-5p ">
             <img src="assets/images/portfolio/ww.png" alt="wisdoms way project">
@@ -128,9 +108,9 @@ seo:
         </div>
         
         <div class="self-center sm:col-span-5 col-span-full p-5p">
-            <h3 class="text-primary">Zen Yoga Studio</h3>
-            <p class="text-success"> This yoga studio website we developed as a portfolio project. While fabricated, it demonstrates our skills in strategizing, designing, and building custom sites optimized for specific client needs. For this yoga studio, we crafted a clean, modern website focused on providing schedule and membership information while reflecting the brand's zen, mindfulness-based culture. Thoughtful UX choices, responsive design, and purpose-built content came together to engage visitors. Though conceptual, projects like this yoga site showcase our process for collaborating with clients to bring their brand to life online through tailored web experiences.</p>
-            <a href="http://yoga.viasana.co" class="button"> Go to site </a>
+            <h3 class="text-primary">{{site.data._copy.section_6.h3_b}}</h3>
+            <p class="text-success">{{site.data._copy.section_6.p_2}}</p>
+            <a href="http://yoga.viasana.co" role="button" class="btn">Go to site</a>
         </div>
     </div>
 </section> 
