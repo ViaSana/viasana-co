@@ -1023,22 +1023,6 @@ a:hover {
   top: 7%;
   right: 7%;
 }
-.avatar.offline:before {
-  content: "";
-  position: absolute;
-  z-index: 10;
-  display: block;
-  border-radius: 9999px;
-  --tw-bg-opacity: 1;
-  background-color: hsl(var(--b3) / var(--tw-bg-opacity));
-  outline-style: solid;
-  outline-width: 2px;
-  outline-color: hsl(var(--b1) / 1);
-  width: 15%;
-  height: 15%;
-  top: 7%;
-  right: 7%;
-}
 .btn-group .btn:not(:first-child):not(:last-child) {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
@@ -1223,14 +1207,17 @@ a:hover {
 .max-w-\[20vw\] {
   max-width: 20vw;
 }
-.max-w-\[390px\] {
-  max-width: 390px;
-}
 .max-w-lg {
   max-width: 32rem;
 }
+.max-w-sm {
+  max-width: 24rem;
+}
 .grow {
   flex-grow: 1;
+}
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .list-disc {
   list-style-type: disc;
@@ -1270,10 +1257,6 @@ a:hover {
 }
 .border-r-2 {
   border-right-width: 2px;
-}
-.border-white {
-  --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 .border-neutral {
   --tw-border-opacity: 1;
@@ -1361,14 +1344,8 @@ a:hover {
   font-size: 3.75rem;
   line-height: 1;
 }
-.font-semibold {
-  font-weight: 600;
-}
 .uppercase {
   text-transform: uppercase;
-}
-.tracking-\[\.2em\] {
-  letter-spacing: .2em;
 }
 .text-accent {
   --tw-text-opacity: 1;

@@ -1,24 +1,21 @@
-choose_us: 
+choose_us:
   - icon: assets/images/icons/fast-right-circle.svg 
-    title: Lightning Fast
-    text: Our team optimizes your website for speed, with lean code and efficient hosting so your pages load in the blink of an eye.
-
+    title: Lightning-Fast Websites
+    text: |
+      Our team optimizes your website for speed, with lean code and efficient hosting so your pages load in the blink of an eye.
   - icon: assets/images/icons/light-bulb-on.svg
-    title: Strategic Design
-    text: We take a holistic approach to understand your business goals and craft a website that's aesthetically stunning focused on telling your story.
-
+    title: Strategic Design That Tells Your Story
+    text: |  
+      Our designs are digital experiences for your audience that mirror your business goals, they're focused on narrating your story and creating an emotional connection with your audience.
   - icon: assets/images/icons/laptop-fix.svg
     title: Easy Content Updates  
-    text: Our intuitive CMS makes it easy for you to update content yourself anytime, no developer needed.
-
+    text: |
+      Say goodbye to developer dependence. Our intuitive Content Management System (CMS) puts the power in your hands. You can update your content anytime you like without the need for technical expertise.
   - icon: assets/images/icons/globe.svg
-    title: Modern Community
-    text: We build on popular frameworks with an eye for responsive design, creating a website tailored to engage today's users.
-
-  - icon: 
-    title: Award-Winning Design
-    text: Our talented designers specialize in creating aesthetically stunning websites focused on visual storytelling and branding.
-
+    title: A Team That Speaks Your Language
+    text:  |
+      We share your language and passion as fellow movement instructors, ensuring seamless and effective collaboration, resulting in a website that truly represents your brand.
+  
   - icon: 
     title: Responsive Design
     text: We build fully responsive websites optimized for engagement on any device - mobile, tablet, desktop.
@@ -31,9 +28,12 @@ agency_bio:
     Our team takes a personal approach to deeply understand each client’s business and community before designing a custom website strategy. With a design tailored to your brand and audience, SEO best practices, and optimization for user experience, we create websites that spread your message and drive results. Let's work together to craft an online presence you love.
 
 services:
-  - title: Development.
-    description: We craft specialized solutions tailored to each client's unique technical needs, integrating custom functionality, applications and more.
-  - title: Marketing.
-    description: Our customized on-brand visual assets, iconography, color palettes, and fonts will bring your brand to life.
-  - title: Support.
-    description: We go beyond launch with ongoing management, updates, hosting, speed optimizations, troubleshooting, and proactive enhancements to improve your site over time.
+  - title: Website Development.
+    description: | 
+      Tired of one-size-fits-all solutions? We've got your back. Our website development team specializes in crafting custom-coded websites tailored to your specific requirements. Say goodbye to template builders like Squarespace or Wix. With us, your digital presence stands out and performs exactly as you need it to.
+  - title: Design & Branding.
+    description: |
+      We're not just about code; we're about creating a visual identity that captivates. Our design and branding experts craft on-brand visual assets, including iconography, color palettes, and fonts, breathing life into your brand and making it truly memorable.
+  - title: Consulting.
+    description: |  
+      Beyond development and design, our consulting services offer digital strategy coaching, website audits, and site map and search strategy for enhancing your existing website and online fitness community.
