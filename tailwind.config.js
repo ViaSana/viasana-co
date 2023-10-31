@@ -8,8 +8,8 @@ module.exports = {
     ],
     theme: {
         fontFamily: {
-            sans: ['Source Sans 3', 'sans-serif'],
-            serif: ['Libre Bodoni', 'serif'],
+            serif: ['merriweather', 'serif'],
+            sans: ['Work Sans', 'sans-serif'],
         },
         extend: {
             spacing: {
@@ -39,10 +39,10 @@ module.exports = {
                 "primary": "#014b64",
                 "secondary": "#3e97a1",
                 "accent": "#731c53",
-                "neutral": "#3d4451",
-                "base-100": "#DDDEE0",
                 "info": "#ccbcdf",
-                "success":"#47494e",
+                "base-100": "#DDDEE0",
+                "neutral": "#7C7D81",
+                "success":"#545558",
             }
             },
         ],

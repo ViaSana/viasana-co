@@ -18,18 +18,18 @@
     }
 
     h1 {
-        @apply text-5xl;
+        @apply mb-2 text-2xl md:text-4xl font-serif;
     }
 
     h2, h3, h4  
     {
-        @apply mb-2 font-serif font-bold;
+        @apply mb-2;
     }
-    h2 { @apply text-4xl } 
-    h3 { @apply text-3xl font-sans }
-    h4 { @apply text-2xl }
+    h2 { @apply text-2xl md:text-4xl font-serif} 
+    h3 { @apply text-xl md:text-3xl font-serif}
+    h4 { @apply text-lg md:text-2xl font-sans}
 
-    p { @apply mb-2 font-light }
+    p { @apply mb-2 font-light font-sans}
     p:last-child{ @apply mb-0 }
 
     img { max-width: 100%; }
