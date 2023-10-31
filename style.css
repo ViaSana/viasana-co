@@ -112,6 +112,16 @@
     .bg-mockup {
         background-image: url('/assets/images/mockup.jpg');
     }
+
+    .bg-laptop {
+        background-image: url('/assets/images/laptop-mockup-1.png');
+        background-position: center;
+    }
+
+    .bg-laptop-2 {
+        background-image: url('/assets/images/laptop-2.png');
+        background-position: center;
+    }
 }
 
 @layer utilities {

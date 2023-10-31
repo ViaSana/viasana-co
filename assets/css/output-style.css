@@ -494,16 +494,16 @@ footer a:hover, .bg-dark .button:hover {
         background-repeat: no-repeat;
         background-image: url('/assets/images/plant.jpg');
     }
-.bg-plant {
-        background-image: url('/assets/images/plant.jpg');
-        background-position: 50% 43%;
-    }
-.bg-plant-2 {
-        background-image: url('/assets/images/plant-2.jpg');
-        background-position: 75% 50%;
-    }
 .bg-meeting {
         background-image: url('/assets/images/MoJo.jpg');
+    }
+.bg-laptop {
+        background-image: url('/assets/images/laptop-mockup-1.png');
+        background-position: center;
+    }
+.bg-laptop-2 {
+        background-image: url('/assets/images/laptop-2.png');
+        background-position: center;
     }
 .absolute {
   position: absolute;
@@ -570,6 +570,9 @@ footer a:hover, .bg-dark .button:hover {
 .min-h-70 {
   min-height: 70vh;
 }
+.min-h-90 {
+  min-height: 90vh;
+}
 .min-h-\[220px\] {
   min-height: 220px;
 }
@@ -581,6 +584,9 @@ footer a:hover, .bg-dark .button:hover {
 }
 .max-w-2xl {
   max-width: 42rem;
+}
+.max-w-\[12vw\] {
+  max-width: 12vw;
 }
 .max-w-\[20vw\] {
   max-width: 20vw;
@@ -751,17 +757,6 @@ footer a:hover, .bg-dark .button:hover {
   max-width: 1536px;
 }
 /* SM - max-width in pixels approximately 768px */
-@media(max-width: 48em) {
-
-        .bg-plant {
-            background-image: url('/assets/images/plant-light.png');
-        }
-
-        .bg-plant-2 {
-            background-image: url('/assets/images/plant-2-light.png');
-            background-position: 45% 50%;
-        }
-    }
 
 /* ----------- Default Styles --------- */
 
