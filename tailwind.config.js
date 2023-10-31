@@ -8,7 +8,7 @@ module.exports = {
     ],
     theme: {
         fontFamily: {
-            sans: ['Source Sans 3', 'sans-serif'],
+            sans: ['"Source Sans 3"', 'sans-serif'],
             serif: ['Libre Bodoni', 'serif'],
         },
         extend: {

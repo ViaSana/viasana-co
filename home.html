@@ -10,23 +10,23 @@ seo:
     hide-from-google: false
 ---
 
-{% include site_header.html %}
+{% include site_nav.html %}
 
 <!-- Section 1: Welcome Hero -->
 <section class="flex items-center bg-image bg-laptop p-5p min-h-90 mx-scrn">
     <div class="max-w-lg">
-        <h2>{{site.data._copy.section_1.h2_a}}</h2>
-        <h1>{{site.data._copy.section_1.h1}}</h1>      
-        <h2>{{site.data._copy.section_1.h2_b}}</h2>
+        <h2>{{site.data._copy.section_1.h2}}</h2>
+        <h1>{{site.data._copy.section_1.h1}}</h1>
+        <h3>{{site.data._copy.section_1.h3}}</h3>
         <a role="button" class="btn btn-primary" href="{{site.data._copy.section_1.btn.link}}">{{site.data._copy.section_1.btn.text}}</a>
     </div>
 </section> 
 
-<!-- Section 2 -->
+<!-- Section 2: Define ViaSana -->
 <section class="bg-secondary" >
     <div class="grid grid-cols-2 mx-scrn">
         <div class="text-center border-r-2 border-neutral p-5p">
-            <h2><span>ViaSana</span> pronounced <br>'Vee-uh-Sah-nuh.’</h2>
+            <h2><span class="tracking-wider text-accent">ViaSana</span> pronounced <br>'Vee-uh-Sah-nuh.’</h2>
         </div>
 
         <div class="p-5p">
@@ -36,7 +36,7 @@ seo:
 </section>
 
 <!-- Section 3: Services  -->
-<section class="flex justify-end text-right bg-contain min-h-70" id="services" style="background-image: url('/assets/images/laptop-2.png');">
+<section class="flex justify-end text-right bg-center bg-no-repeat max-h-[1024px]" id="services" style="background-image: url('/assets/images/laptop-2.png');">
     <div class="self-center max-w-sm">
         <h2 class="text-primary">{{site.data._copy.section_3.h2}}</h2>
         <p class="">{{site.data._copy.section_3.p_1}}</p>
@@ -44,7 +44,7 @@ seo:
     </div>
 </section>
 
-<!-- Grid of Services  -->
+    <!-- Service Grid  -->
 <section class="grid sm:grid-cols-3 bg-secondary">
     {% for service in site.data.why-choose-us.services %}
         <div class="p-5p text-base-100">
@@ -56,9 +56,7 @@ seo:
 
 <!-- Section 4: Why Choose Us + Icon Grid  -->
 <section class="grid grid-cols-2 text-center icon-section" id="why-us">
-    <div class="pb-4 text-center col-span-full text-accent"> 
-        <h2>Why Choose Us</h2>
-    </div>
+    <h2 class="text-accent col-span-full">Why Choose Us</h2>
 
     <!-- Loop for "why-choose-us.yml" (Icon, Title, and Text) -->
     {% for item in site.data.why-choose-us.choose_us limit:4 %}

@@ -1,7 +1,7 @@
 section_1:
-  h2_a: Welcome to ViaSana
+  h2: Welcome to ViaSana
   h1: A Website Design and Development Co-Op for Coaches, Yoga Studios, and Wellness Brands
-  h2_b: Crafting Digital Magic that Illuminates Your Online Presence.
+  h3: Crafting Digital Magic that Illuminates Your Online Presence.
   btn:
     text: Explore Web Design Services
     link:         

@@ -10,38 +10,27 @@
         max-width: 100vw;
         overflow-x: hidden;
         scroll-behavior: smooth;        
-        @apply bg-base-100;
     }
 
     section {
         @apply p-5p;
     }
 
-    h1 {
-        @apply text-5xl;
-    }
+    h1  { @apply text-4xl font-sans mb-2 }
+    h2  { @apply text-4xl font-serif mb-2 }
+    h3  { @apply text-3xl font-sans mb-2 }
+    h4  { @apply text-2xl font-serif mb-2 }
 
-    h2, h3, h4  
-    {
-        @apply mb-2 font-serif font-bold;
+    p { 
+        @apply mb-2 font-light 
     }
-    h2 { @apply text-4xl } 
-    h3 { @apply text-3xl font-sans }
-    h4 { @apply text-2xl }
-
-    p { @apply mb-2 font-light }
-    p:last-child{ @apply mb-0 }
+    p:last-child { 
+        @apply mb-0 
+    }
 
     img { max-width: 100%; }
-    
-    nav a { @apply no-underline text-primary }
 
     a:hover { @apply text-secondary }
-    
-    .subtle { 
-        opacity: 0.8;
-        font-size: 0.9rem;
-    }
 }
 
 
@@ -54,12 +43,8 @@
         font-weight: 400;
         color: white;
     }
-    .btn{
-        @apply border-2 border-neutral;
-    }
 
     /* Background Images */
-
     .bg-image {
         background-color:rgb(240,240,240); 
         background-size: cover; 
@@ -102,20 +87,7 @@
         margin: 1rem auto;
     }
 
-    .mx-scrn {
-        @apply mx-auto max-w-screen-2xl;
-    }
+    .mx-scrn {  @apply mx-auto max-w-screen-2xl }
 
-    /* SM - max-width in pixels approximately 768px */
-    @media(max-width: 48em) {
-
-        .bg-plant {
-            background-image: url('/assets/images/plant-light.png');
-        }
-
-        .bg-plant-2 {
-            background-image: url('/assets/images/plant-2-light.png');
-            background-position: 45% 50%;
-        }
-    }
+    .subtle {   @apply opacity-80 text-sm }
 }
