@@ -1,10 +1,11 @@
 section_1:
-  h2_1: Welcome to ViaSana
+  h2_a: Welcome to ViaSana
   h1: A Website Design and Development Co-Op for Coaches, Yoga Studios, and Wellness Brands
-  h2_2: Crafting Digital Magic that Illuminates Your Online Presence.
+  h2_b: Crafting Digital Magic that Illuminates Your Online Presence.
   btn:
     text: Explore Web Design Services
     link:         
+
 section_2:
   # on page
 
@@ -30,10 +31,10 @@ section_5:
 section_6:
   h2: Featured Projects
   
-  h3_1: Wisdom’s Way
+  h3_a: Wisdom’s Way
   p_1: |  
     Wisdom's Way radiates soft, warm hues, bringing her unique coaching offerings to life. We collaborated closely with Lisa from the ground up, rebuilding her Squarespace website with custom code and design, hand-picking colors, and offering assistance with copywriting. The result is a holistic coaching site that exemplifies our process of fusing creative design with digital strategy to achieve both aesthetic and functional business goals.
   
-  h3_2: Indie Yoga Studio
+  h3_b: Indie Yoga Studio
   p_2: |
     Indie Yoga is a testament to our versatility. We not only moved their website from WordPress to a custom-coded platform but also orchestrated a complete overhaul of their website design. Indie embodies a sleek, modern aesthetic that beautifully captures the comfort their studio provides. The site showcases their class offerings, seamlessly integrates with their Walla booking service, and is a prime example of our ability to transform and elevate web experiences.
