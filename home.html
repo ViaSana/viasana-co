@@ -15,9 +15,9 @@ seo:
 <!-- Section 1: Welcome Hero -->
 <section class="flex items-center bg-image bg-laptop p-5p min-h-90 mx-scrn">
     <div class="max-w-lg text-primary">
-        <div class="mb-2 font-serif text-xl">{{site.data._copy.section_1.h2}}</div>
+        <div class="mb-2 font-serif text-xl">{{site.data._copy.section_1.welcome}}</div>
         <h1 class="font-bold">{{site.data._copy.section_1.h1}}</h1>      
-        <h4 class="font-sans">{{site.data._copy.section_1.h2_2}}</h4>
+        <h4 class="font-sans">{{site.data._copy.section_1.h4}}</h4>
         <a role="button" class="btn btn-primary" href="{{site.data._copy.section_1.btn.link}}">{{site.data._copy.section_1.btn.text}}</a>
     </div>
     <div class="relative self-center">
@@ -30,11 +30,11 @@ seo:
 <section class="bg-base-100">
     <div class="grid grid-cols-2 mx-scrn">
         <div class="text-center border-r-2 border-accent p-5p">
-            <h4 class="text-accent"> <span class=" text-2xl md:text-5xl"> ViaSana </span> <br> (Vee-uh-Sah-nuh) </h4>
+            <h4 class="text-accent"> <span class="text-2xl md:text-5xl"> ViaSana </span> <br> (Vee-uh-Sah-nuh) </h4>
         </div>
 
         <div class="p-5p">
-            <p class="text-accent"> {{site.data._copy.section_2.column_2}} </p>
+            <p class="text-accent"> {{site.data._copy.section_2.p}} </p>
         </div>
     </div>
 </section>
@@ -43,14 +43,14 @@ seo:
 <section class="flex justify-end text-right bg-center bg-no-repeat max-h-[1024px] bg-image bg-mojo_2" id="services">
     <div class="self-center max-w-sm">
         <h2 class="text-success">{{site.data._copy.section_3.h2}}</h2>
-        <p class="text-success">{{site.data._copy.section_3.p_1}}</p>
-        <a role="button" class="btn btn-primary">{{site.data._copy.section_3.btn.text}}</a>
+        <p class="text-success">{{site.data._copy.section_3.p}}</p>
+        <a role="button" class="btn btn-primary" href="{{site.data._copy.section_3.btn.links}}">{{site.data._copy.section_3.btn.text}}</a>
     </div>
 </section>
 
-    <!-- Service Grid  -->
+<!-- Section 3 (cont.): Service Grid  -->
 <section class="grid sm:grid-cols-3 bg-secondary">
-    {% for service in site.data.why-choose-us.services %}
+    {% for service in site.data._copy.section_3.services %}
         <div class="p-5p text-success">
             <h4>{{ service.title }}</h4>
             <p>{{ service.description }}</p> 
@@ -84,11 +84,7 @@ seo:
     <div class="col-span-full md:col-span-5 bg-image bg-meeting pb-100p"></div> 
 </section>
 
-<!-- Contact CTA -->
-<section class="text-center text-base-100 bg-info"> 
-    <h3 class="text-primary">Don't wait to make your dream a reality</h3>
-    <a role="button" class="btn" href="/home#contact">Contact Us Now</a>
-</section> 
+{% include cta.html %}
 
 <!-- Section 6: Featured Projects -->
 <section>

@@ -15,18 +15,7 @@ choose_us:
     title: A Team That Gets It
     text:  |
       As fellow movement instructors, we share your language and passion for wellness resulting in a website that truly represents your brand.
-  
+  # Currently Limited to 4 above
   - icon: 
     title: Responsive Design
     text: We build fully responsive websites optimized for engagement on any device - mobile, tablet, desktop.
-
-services:
-  - title: Website Development
-    description: | 
-      We specialize in crafting custom-coded websites tailored to your specific requirements. Say goodbye to template builders like Squarespace or Wix. With us, your digital presence stands out and performs exactly as you need it to.
-  - title: Design & Branding
-    description: |
-      We're not just about code; we're about creating a visual identity that captivates. Our design and branding experts craft on-brand visual assets, including iconography, color palettes, and fonts, breathing life into your brand and making it truly memorable.
-  - title: Consulting
-    description: |  
-      Beyond development and design, our consulting services offer digital strategy coaching, website audits, and site map and search strategy for enhancing your existing website and online fitness community.
