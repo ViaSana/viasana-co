@@ -33,7 +33,6 @@
 
     img { max-width: 100%; }
 
-    a:hover { @apply text-secondary }
 }
 
 
@@ -41,7 +40,11 @@
 @layer components {
 
     .btn-primary { 
-        @apply font-serif text-success hover:bg-secondary hover:text-primary text-base
+        @apply font-serif text-success bg-accent hover:bg-primary text-base
+    }
+
+    #top-nav a {
+        @apply hover:text-accent
     }
 
     /* Background Images */
@@ -76,6 +79,16 @@
 
     .bg-laptop-2 {
         background-image: url('/assets/images/laptop-2.png');
+        background-position: center;
+    }
+
+    .bg-mojo_2 {
+        background-image: url('/assets/images/mojo_2.png');
+        background-position: center;
+    }
+
+    .bg-flower_of_life {
+        background-image: url('/assets/images/flower_of_life.png');
         background-position: center;
     }
 }
