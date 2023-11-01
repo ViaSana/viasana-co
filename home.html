@@ -15,10 +15,10 @@ seo:
 <!-- Section 1: Welcome Hero -->
 <section class="flex items-center bg-image bg-laptop p-5p min-h-90 mx-scrn">
     <div class="max-w-lg text-primary">
-        <div class="mb-2 font-serif text-xl">{{site.data.site_copy.section_1.h2_1}}</div>
-        <h1 class="font-bold">{{site.data.site_copy.section_1.h1}}</h1>      
-        <h4>{{site.data.site_copy.section_1.h2_2}}</h4>
-        <a role="button" class="btn btn-primary" href="{{site.data.site_copy.section_1.btn.link}}">{{site.data.site_copy.section_1.btn.text}}</a>
+        <div class="mb-2 font-serif text-xl">{{site.data._copy.section_1.h2}}</div>
+        <h1 class="font-bold">{{site.data._copy.section_1.h1}}</h1>      
+        <h4 class="font-sans">{{site.data._copy.section_1.h2_2}}</h4>
+        <a role="button" class="btn btn-primary" href="{{site.data._copy.section_1.btn.link}}">{{site.data._copy.section_1.btn.text}}</a>
     </div>
     <div class="relative self-center">
         <img src="assets/portfolio/Yoga_MacBook.png" alt="Yoga Studio Site">
@@ -27,31 +27,31 @@ seo:
 </section> 
 
 <!-- Section 2: Define ViaSana -->
-<section class="bg-secondary" >
+<section class="bg-base-100">
     <div class="grid grid-cols-2 mx-scrn">
-        <div class="text-center border-r-2 border-neutral p-5p">
-            <h2><span class="tracking-wider text-accent">ViaSana</span> pronounced <br>'Vee-uh-Sah-nuh.’</h2>
+        <div class="text-center border-r-2 border-accent p-5p">
+            <h4 class="text-accent"> <span class=" text-2xl md:text-5xl"> ViaSana </span> <br> (Vee-uh-Sah-nuh) </h4>
         </div>
 
         <div class="p-5p">
-            <p>As fellow movement instructors, we totally get it. You’re busy making the world a healthier place, and tech stuff? Maybe not your jam. At ViaSana, we're here to make it easy. Just as our name suggests, 'Via' means 'A way,' and 'Sana' means 'Health.' We are your 'way to health' in the digital realm.</p>
+            <p class="text-accent"> {{site.data._copy.section_2.column_2}} </p>
         </div>
     </div>
 </section>
 
 <!-- Section 3: Services  -->
-<section class="flex justify-end text-right bg-center bg-no-repeat max-h-[1024px]" id="services" style="background-image: url('/assets/images/laptop-2.png');">
+<section class="flex justify-end text-right bg-center bg-no-repeat max-h-[1024px] bg-image bg-mojo_2" id="services">
     <div class="self-center max-w-sm">
-        <h2 class="text-primary">{{site.data._copy.section_3.h2}}</h2>
-        <p class="">{{site.data._copy.section_3.p_1}}</p>
-        <a role="button" class="btn">{{site.data._copy.section_3.btn.text}}</a>
+        <h2 class="text-success">{{site.data._copy.section_3.h2}}</h2>
+        <p class="text-success">{{site.data._copy.section_3.p_1}}</p>
+        <a role="button" class="btn btn-primary">{{site.data._copy.section_3.btn.text}}</a>
     </div>
 </section>
 
     <!-- Service Grid  -->
 <section class="grid sm:grid-cols-3 bg-secondary">
     {% for service in site.data.why-choose-us.services %}
-        <div class="p-5p text-base-100">
+        <div class="p-5p text-success">
             <h4>{{ service.title }}</h4>
             <p>{{ service.description }}</p> 
         </div>
@@ -60,28 +60,28 @@ seo:
 
 <!-- Section 4: Why Choose Us + Icon Grid  -->
 <section class="grid grid-cols-2 text-center icon-section" id="why-us">
-    <h2 class="text-accent col-span-full">Why Choose Us</h2>
+    <h2 class="text-primary col-span-full">Why Choose Us</h2>
 
     <!-- Loop for "why-choose-us.yml" (Icon, Title, and Text) -->
     {% for item in site.data.why-choose-us.choose_us limit:4 %}
     <div class="col-span-2 sm:col-span-1 min-h-[220px]">
         <img src="{{ item.icon }}"> 
-        <h4 class="px-1 text-accent">{{ item.title }}</h4>
-        <p class="p-2">{{ item.text }}</p>
+        <h4 class="px-1 text-primary">{{ item.title }}</h4>
+        <p class="p-2 text-primary">{{ item.text }}</p>
     </div>
     {% endfor %}
 </section>
 
 <!-- Section 5: Intro  -->
-<section class="grid grid-cols-12 text-base-100 bg-accent">
-    <div class="col-span-full md:col-span-5 bg-image bg-meeting min-h-50"></div> 
-    <div class="self-center col-span-full md:col-span-7 p-10p">
+<section class="grid grid-cols-12 text-base-100 bg-accent bg-image bg-flower_of_life">
+    <div class="self-center col-span-full md:col-span-7 pr-5p">
         <div>
             <h2 class="pb-4">{{site.data._copy.section_5.h2}}</h2>
             <p>{{site.data._copy.section_5.p_1}}</p>
             <p>{{site.data._copy.section_5.p_2}}</p>
         </div>
     </div>
+    <div class="col-span-full md:col-span-5 bg-image bg-meeting pb-100p"></div> 
 </section>
 
 <!-- Contact CTA -->

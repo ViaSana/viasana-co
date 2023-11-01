@@ -9,7 +9,7 @@ module.exports = {
     theme: {
         fontFamily: {
             serif: ['merriweather', 'serif'],
-            sans: ['Work Sans', 'sans-serif'],
+            sans: ['hind', 'sans-serif'],
         },
         extend: {
             spacing: {
@@ -42,7 +42,7 @@ module.exports = {
                 "info": "#ccbcdf",
                 "base-100": "#DDDEE0",
                 "neutral": "#7C7D81",
-                "success":"#545558",
+                "success":"#FFFFFF",
             }
             },
         ],

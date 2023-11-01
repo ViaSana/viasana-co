@@ -4,29 +4,29 @@ choose_us:
     text: |
       Our team optimizes your website for speed, with lean code and efficient hosting so your pages load in the blink of an eye.
   - icon: assets/images/icons/light-bulb-on.svg
-    title: Strategic Design That Tells Your Story
+    title: Strategic Design
     text: |  
-      Our designs are digital experiences for your audience that mirror your business goals, they're focused on narrating your story and creating an emotional connection with your audience.
+      Our designs are digital experiences for your audience that mirror your business goals and are focused on narrating your story.
   - icon: assets/images/icons/laptop-fix.svg
     title: Easy Content Updates  
     text: |
-      Say goodbye to developer dependence. Our intuitive Content Management System (CMS) puts the power in your hands. You can update your content anytime you like without the need for technical expertise.
+      Our intuitive Content Management System (CMS) puts the power in your hands, allowing you to  update your content anytime you like.
   - icon: assets/images/icons/globe.svg
-    title: A Team That Speaks Your Language
+    title: A Team That Gets It
     text:  |
-      We share your language and passion as fellow movement instructors, ensuring seamless and effective collaboration, resulting in a website that truly represents your brand.
+      As fellow movement instructors, we share your language and passion for wellness resulting in a website that truly represents your brand.
   
   - icon: 
     title: Responsive Design
     text: We build fully responsive websites optimized for engagement on any device - mobile, tablet, desktop.
 
 services:
-  - title: Website Development.
+  - title: Website Development
     description: | 
-      Tired of one-size-fits-all solutions? We've got your back. Our website development team specializes in crafting custom-coded websites tailored to your specific requirements. Say goodbye to template builders like Squarespace or Wix. With us, your digital presence stands out and performs exactly as you need it to.
-  - title: Design & Branding.
+      We specialize in crafting custom-coded websites tailored to your specific requirements. Say goodbye to template builders like Squarespace or Wix. With us, your digital presence stands out and performs exactly as you need it to.
+  - title: Design & Branding
     description: |
       We're not just about code; we're about creating a visual identity that captivates. Our design and branding experts craft on-brand visual assets, including iconography, color palettes, and fonts, breathing life into your brand and making it truly memorable.
-  - title: Consulting.
+  - title: Consulting
     description: |  
       Beyond development and design, our consulting services offer digital strategy coaching, website audits, and site map and search strategy for enhancing your existing website and online fitness community.
