@@ -1526,6 +1526,12 @@ img { max-width: 100%; }
 .right-24 {
   right: 6rem;
 }
+.-right-10 {
+  right: -2.5rem;
+}
+.-right-8 {
+  right: -2rem;
+}
 .col-span-2 {
   grid-column: span 2 / span 2;
 }
@@ -1542,24 +1548,20 @@ img { max-width: 100%; }
   margin-left: auto;
   margin-right: auto;
 }
-.my-8 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
 .mb-2 {
   margin-bottom: 0.5rem;
 }
 .mb-6 {
   margin-bottom: 1.5rem;
 }
-.ml-4 {
-  margin-left: 1rem;
-}
 .mt-2 {
   margin-top: 0.5rem;
 }
 .mt-4 {
   margin-top: 1rem;
+}
+.mb-4 {
+  margin-bottom: 1rem;
 }
 .flex {
   display: flex;
@@ -1570,17 +1572,11 @@ img { max-width: 100%; }
 .hidden {
   display: none;
 }
-.aspect-landscape {
-  aspect-ratio: 2 / 1 ;
-}
-.aspect-square {
-  aspect-ratio: 1 / 1;
-}
 .aspect-\[16\/9\] {
   aspect-ratio: 16/9;
 }
-.aspect-portrait-tall {
-  aspect-ratio: 3 / 5;
+.aspect-landscape {
+  aspect-ratio: 2 / 1 ;
 }
 .aspect-portrait {
   aspect-ratio: 3 / 4;
@@ -1627,14 +1623,11 @@ img { max-width: 100%; }
 .max-w-lg {
   max-width: 32rem;
 }
-.max-w-sm {
-  max-width: 24rem;
-}
-.max-w-xl {
-  max-width: 36rem;
-}
 .max-w-screen-2xl {
   max-width: 1536px;
+}
+.max-w-sm {
+  max-width: 24rem;
 }
 .flex-1 {
   flex: 1 1 0%;
@@ -1644,6 +1637,9 @@ img { max-width: 100%; }
 }
 .grow {
   flex-grow: 1;
+}
+.basis-\[60\%\] {
+  flex-basis: 60%;
 }
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1657,20 +1653,14 @@ img { max-width: 100%; }
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
-.grid-cols-5 {
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-}
 .grid-cols-6 {
   grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 .flex-row {
   flex-direction: row;
 }
-.place-content-start {
-  place-content: start;
-}
-.items-start {
-  align-items: flex-start;
+.flex-wrap {
+  flex-wrap: wrap;
 }
 .items-center {
   align-items: center;
@@ -1690,12 +1680,6 @@ img { max-width: 100%; }
 .rounded-full {
   border-radius: 9999px;
 }
-.rounded-3xl {
-  border-radius: 1.5rem;
-}
-.rounded-sm {
-  border-radius: 0.125rem;
-}
 .rounded-lg {
   border-radius: 0.5rem;
 }
@@ -1704,6 +1688,9 @@ img { max-width: 100%; }
 }
 .border-r-2 {
   border-right-width: 2px;
+}
+.border-b-2 {
+  border-bottom-width: 2px;
 }
 .border-accent {
   --tw-border-opacity: 1;
@@ -1776,12 +1763,11 @@ img { max-width: 100%; }
   padding-left: 5%;
   padding-right: 5%;
 }
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
 .pb-0 {
   padding-bottom: 0px;
+}
+.pb-2 {
+  padding-bottom: 0.5rem;
 }
 .pb-4 {
   padding-bottom: 1rem;
@@ -1792,17 +1778,11 @@ img { max-width: 100%; }
 .pt-5p {
   padding-top: 5%;
 }
-.pb-2 {
-  padding-bottom: 0.5rem;
-}
 .text-center {
   text-align: center;
 }
 .text-right {
   text-align: right;
-}
-.align-top {
-  vertical-align: top;
 }
 .font-sans {
   font-family: hind, sans-serif;
@@ -1828,9 +1808,6 @@ img { max-width: 100%; }
 }
 .font-bold {
   font-weight: 700;
-}
-.uppercase {
-  text-transform: uppercase;
 }
 .text-accent {
   --tw-text-opacity: 1;
@@ -1905,11 +1882,17 @@ img { max-width: 100%; }
   .sm\:col-span-7 {
     grid-column: span 7 / span 7;
   }
+  .sm\:basis-\[60\%\] {
+    flex-basis: 60%;
+  }
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .sm\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .sm\:border-r-2 {
+    border-right-width: 2px;
   }
   .sm\:text-right {
     text-align: right;
@@ -1917,20 +1900,23 @@ img { max-width: 100%; }
 }
 
 @media (min-width: 768px) {
+  .md\:-right-10 {
+    right: -2.5rem;
+  }
+  .md\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
   .md\:col-span-5 {
     grid-column: span 5 / span 5;
   }
   .md\:col-span-7 {
     grid-column: span 7 / span 7;
   }
-  .md\:col-span-2 {
-    grid-column: span 2 / span 2;
-  }
-  .md\:col-span-3 {
-    grid-column: span 3 / span 3;
-  }
   .md\:hidden {
     display: none;
+  }
+  .md\:basis-\[60\%\] {
+    flex-basis: 60%;
   }
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));

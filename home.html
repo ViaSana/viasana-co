@@ -13,29 +13,31 @@ seo:
 {% include site_nav.html %}
 
 <!-- Section 1: Welcome Hero -->
-<section class="flex items-center bg-image bg-laptop p-5p min-h-90 mx-scrn">
-    <div class="max-w-lg text-primary">
+<section class="flex flex-wrap items-center bg-image bg-laptop p-5p min-h-90 mx-scrn">
+    <div class="max-w-lg mb-4 text-primary">
         <div class="mb-2 font-serif text-xl">{{site.data._copy.section_1.welcome}}</div>
         <h1 class="font-bold">{{site.data._copy.section_1.h1}}</h1>      
         <h4 class="font-sans">{{site.data._copy.section_1.h4}}</h4>
         <a role="button" class="btn btn-primary" href="{{site.data._copy.section_1.btn.link}}">{{site.data._copy.section_1.btn.text}}</a>
     </div>
-    <div class="relative self-center">
+    <div class="relative self-center md:basis-[60%]">
         <img src="assets/portfolio/Yoga_MacBook.png" alt="Yoga Studio Site">
-        <img src="assets/portfolio/Yoga_Phone-vid.gif" alt="Yoga Studio Mobile Page" class="absolute -right-12 h-[80%] -bottom-4">
+        <img src="assets/portfolio/Yoga_Phone-vid.gif" alt="Yoga Studio Mobile Page" class="absolute -right-8 md:-right-10 h-[80%] -bottom-4">
     </div>
 </section> 
 
 <!-- Section 2: Define ViaSana -->
 <section class="bg-base-100">
-    <div class="grid grid-cols-2 mx-scrn">
-        <div class="text-center border-r-2 border-accent p-5p">
+    <div class="grid sm:grid-cols-2 mx-scrn">
+        
+        <div class="text-center border-b-2 sm:border-r-2 border-accent p-5p">
             <h4 class="text-accent"> <span class="text-2xl md:text-5xl"> ViaSana </span> <br> (Vee-uh-Sah-nuh) </h4>
         </div>
 
         <div class="p-5p">
             <p class="text-accent"> {{site.data._copy.section_2.p}} </p>
         </div>
+
     </div>
 </section>
 
