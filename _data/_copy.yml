@@ -1,7 +1,7 @@
 section_1:
   welcome: Welcome to ViaSana
   h1: A Website Design and Development Co-Op
-  h4: Crafting Digital Magic for Coaches, <br> Yoga Studios, and Wellness Brands
+  h4: Crafting Digital Magic for Coaches, Yoga Studios, and Wellness Brands
   btn:
     text: Explore Web Design Services
     link:         
@@ -18,7 +18,7 @@ section_3:
     text: Get Started
     link:   
   services:
-    - title: Website Development
+    - title: Development
       description: | 
         We specialize in crafting custom-coded websites tailored to your specific requirements. Say goodbye to template builders like Squarespace or Wix. With us, your digital presence stands out and performs exactly as you need it to.
     - title: Design & Branding

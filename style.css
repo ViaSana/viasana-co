@@ -18,12 +18,12 @@
     }
 
     h1 {
-        @apply mb-2 font-serif text-3xl md:text-6xl;
+        @apply mb-4 font-serif text-3xl md:text-6xl;
     }
 
     h2, h3, h4  
     {
-        @apply mb-2;
+        @apply mb-4;
     }
     h2 { @apply text-2xl md:text-5xl font-serif} 
     h3 { @apply text-xl md:text-4xl font-serif}
@@ -40,7 +40,11 @@
 @layer components {
 
     .btn-primary { 
-        @apply font-serif text-success bg-accent hover:bg-primary text-base
+        @apply font-serif text-success bg-accent hover:bg-primary text-base capitalize
+    }
+
+    .btn-secondary { 
+        @apply font-serif text-primary bg-info hover:bg-secondary text-base capitalize
     }
 
     #top-nav a {
@@ -70,6 +74,20 @@
 
     .bg-flower_of_life {
         background-image: url('/assets/images/flower_of_life.png');
+    }
+
+    .bg-laptop {
+        background-image: url('/assets/images/laptop-mockup-1.png');
+        background-position: center;
+    }
+
+    .bg-laptop-2 {
+        background-image: url('/assets/images/laptop-2.png');
+        background-position: center;
+    }
+
+    .bg-flower_blue {
+        background-image: url('/assets/images/flower_blue.png');
         background-position: center;
     }
 

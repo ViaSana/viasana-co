@@ -1,22 +1,22 @@
 <!-- include contact -->
-<section id="contact">
-  <h2 class="mb-6 text-center editable">Contact Us</h2>
+<section id="contact" class="bg-primary">
+  <h2 class="mb-12 text-center text-success editable"> Contact Us</h2>
 
   <div class="flex flex-wrap max-w-screen-2xl">
       
       <div class="self-center lg:basis-1/2 basis-full"> 
-          <div class="bg-cover aspect-[16/9] rounded-lg" style="background-image: url('assets/images/joe-stretch.jpg');"></div>
+          <div class="bg-cover aspect-[16/9] rounded-lg shadow-xl" style="background-image: url('assets/images/joe-stretch.jpg');"></div>
       </div>
       
       <!-- Contact Form -->
       <div class="mt-4 grow"> 
         <form class="grid max-w-lg p-2 px-4 mx-auto" method="post"> 
-          <label for="name">Hello!</label>
+          <label for="name font-serif">Hello!</label>
           <input type="text" placeholder="Name" id="name" class="w-full input input-bordered input-primary" />
           <input type="text" placeholder="Email" id="name" class="w-full mt-2 input input-bordered input-primary" />
     
-          <label for="message" class="mt-4">How can we help? </label>
-          <textarea class="textarea textarea-primary" id="message" name="message" placeholder="Your message"></textarea>
+          <label for="message" class="mt-2 font-serif text-success">How can we help? </label>
+          <textarea class="font-sans text-base textarea textarea-primary placeholder-neutral" id="message" name="message" placeholder="Your message"></textarea>
     
           <input type="hidden" name="inbox_key" value="contact-form">
           <input type="text" name="_gotcha" style="display: none;">
