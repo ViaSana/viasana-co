@@ -15,7 +15,7 @@ seo:
 <!-- Section 1: Welcome Hero -->
 <section class="flex items-center bg-image bg-laptop p-5p min-h-90 mx-scrn">
     <div class="max-w-lg text-primary">
-        <div class="mb-2 font-serif text-xl">{{site.data._copy.section_1.welcome}}</div>
+        <div class="mb-2 font-serif text-xl italic">{{site.data._copy.section_1.welcome}}</div>
         <h1 class="font-bold">{{site.data._copy.section_1.h1}}</h1>      
         <h4 class="font-sans">{{site.data._copy.section_1.h4}}</h4>
         <a role="button" class="btn btn-primary" href="{{site.data._copy.section_1.btn.link}}">{{site.data._copy.section_1.btn.text}}</a>
@@ -73,27 +73,27 @@ seo:
 </section>
 
 <!-- Section 5: Meet the Magic Makers  -->
-<section class="grid grid-cols-12 text-base-100 bg-accent">
-    <div class="self-center col-span-full md:col-span-7 pr-5p">
+<section class="grid grid-cols-12 bg-accent">
+    <div class="self-center col-span-full md:col-span-7 pr-5p text-success">
         <div>
             <h2 class="pb-4">{{site.data._copy.section_5.h2}}</h2>
             <p>{{site.data._copy.section_5.p_1}}</p>
             <p>{{site.data._copy.section_5.p_2}}</p>
         </div>
     </div>
-    <div class="col-span-full md:col-span-5 bg-image bg-meeting aspect-portrait"></div> 
+    <div class="col-span-full md:col-span-5 bg-image bg-meeting aspect-portrait rounded-lg shadow-xl"></div> 
 </section>
 
 {% include cta.html %}
 
 <!-- Section 6: Featured Projects -->
 <section id="portfolio">
-    <h2 class="text-center text-primary">{{site.data._copy.section_6.h2}}</h2>
-    <div class="grid grid-cols-12">
+    <h2 class="text-center text-primary pb-12">{{site.data._copy.section_6.h2}}</h2>
+    <div class="grid grid-cols-12 pb-12">
         <div class="self-center sm:col-span-5 col-span-full p-5p max-sm:order-2">
             <h3 class="text-primary">{{site.data._copy.section_6.h3_a}}</h3>
-            <p class="text-success">{{site.data._copy.section_6.p_1}}</p>
-            <a href="http://wisdoms-way.com" role="button" class="btn">Go to site</a>
+            <p class="text-primary">{{site.data._copy.section_6.p_1}}</p>
+            <a href="http://wisdoms-way.com" role="button" class="btn btn-primary">Go to site</a>
         </div>
         <div class="relative self-center sm:col-span-7 col-span-full p-5p ">
             <img src="assets/portfolio/ww_MacBook.png" alt="wisdoms way project">
@@ -101,7 +101,7 @@ seo:
         </div>
 
     </div>
-    <div class="grid grid-cols-12 md:flex-row-reverse">
+    <div class="grid grid-cols-12 md:flex-row-reverse pb-12">
         <div class="relative self-center sm:col-span-7 col-span-full p-5p ">
             <img src="assets/portfolio/indie_MacBook.png" alt="Indie Yoga project">
             <!-- <img src="assets/portfolio/indie_Phone.png" alt="Indie Yoga project - mobile" class="absolute right-24 h-[80%] -bottom-4"> -->
@@ -109,8 +109,8 @@ seo:
         
         <div class="self-center sm:col-span-5 col-span-full p-5p">
             <h3 class="text-primary">{{site.data._copy.section_6.h3_b}}</h3>
-            <p class="text-success">{{site.data._copy.section_6.p_2}}</p>
-            <a href="http://yoga.viasana.co" role="button" class="btn">Go to site</a>
+            <p class="text-primary">{{site.data._copy.section_6.p_2}}</p>
+            <a href="http://yoga.viasana.co" role="button" class="btn btn-primary"> Go to site</a>
         </div>
     </div>
 </section> 
