@@ -1,0 +1,28 @@
+<!-- include contact -->
+<section id="contact">
+  <h2 class="mb-6 text-center editable">Contact Us</h2>
+
+  <div class="grid grid-cols-6 mx-auto max-w-screen-2xl">
+      
+      <div class="self-center md:col-span-3 col-span-full"> 
+          <div class="bg-cover aspect-[16/9] rounded-lg" style="background-image: url('assets/images/joe-stretch.jpg');"></div>
+      </div>
+      
+      <!-- Contact Form -->
+      <div class="md:col-span-3 col-span-full"> 
+        <form class="grid max-w-lg p-2 mx-auto" method="post"> 
+          <label for="name">Hello!</label>
+          <input type="text" placeholder="Name" id="name" class="w-full mt-2 input input-bordered input-primary" />
+          <input type="text" placeholder="Email" id="name" class="w-full mt-2 input input-bordered input-primary" />
+    
+          <label for="message" class="mt-4">How can we help? </label>
+          <textarea class="textarea textarea-primary" id="message" name="message" placeholder="Your message"></textarea>
+    
+          <input type="hidden" name="inbox_key" value="contact-form">
+          <input type="text" name="_gotcha" style="display: none;">
+    
+          <div class="text-right"> <input class="m-4 btn btn-secondary" type="submit" value="submit" id="submitBtn"/> </div>
+        </form>
+      </div>
+  </div>
+</section>
