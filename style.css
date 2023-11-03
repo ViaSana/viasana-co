@@ -33,7 +33,6 @@
     p:last-child{ @apply mb-0 }
 
     img { max-width: 100%; }
-
 }
 
 
@@ -50,11 +49,7 @@
 
     /* Background Images */
     .bg-image {
-        background-color:rgb(240,240,240); 
-        background-size: cover; 
-        background-position: center; 
-        background-repeat: no-repeat;
-        background-image: url('/assets/images/plant.jpg');
+        @apply bg-center bg-no-repeat bg-cover;
     }
 
     .bg-plant {
@@ -73,24 +68,25 @@
         background-image: url('/assets/images/mockup.jpg');
     }
 
-    .bg-laptop {
-        background-image: url('/assets/images/laptop-mockup-1.png');
-        background-position: center;
-    }
-
-    .bg-laptop-2 {
-        background-image: url('/assets/images/laptop-2.png');
-        background-position: center;
-    }
-
-    .bg-mojo_2 {
-        background-image: url('/assets/images/mojo_2.png');
-        background-position: center;
-    }
-
     .bg-flower_of_life {
         background-image: url('/assets/images/flower_of_life.png');
         background-position: center;
+    }
+
+    .bg-mojo {
+        background-image: url('/assets/images/mojo_2.png');
+        @apply bg-center bg-no-repeat bg-cover;
+    }
+
+    @media (max-width: 640px) {
+        .bg-mojo{
+            background-position: 70%;
+            background-size: auto 140%;
+        }
+    }
+
+    .textarea {
+        @apply min-h-[6rem];
     }
 }
 
@@ -104,4 +100,9 @@
     .mx-scrn {  @apply mx-auto max-w-screen-2xl }
 
     .subtle {   @apply opacity-80 text-sm }
+
+    .page-overlay {
+        position: relative;
+        background-color: rgba(105, 105, 105, 0.45);
+    }
 }
