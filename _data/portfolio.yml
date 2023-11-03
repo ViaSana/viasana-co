@@ -1,30 +1,50 @@
 projects:
 - name: Wisdom’s Way
+  image:
+  id: 0 
   description: |  
     Wisdom's Way radiates soft, warm hues, bringing her unique coaching offerings to life. We collaborated closely with Lisa from the ground up, rebuilding her Squarespace website with custom code and design, hand-picking colors, and offering assistance with copywriting. The result is a holistic coaching site that exemplifies our process of fusing creative design with digital strategy to achieve both aesthetic and functional business goals.
 - name: Indie Yoga Studio
+  image:
+  id: 1 
   description: |
     Indie Yoga is a testament to our versatility. We not only moved their website from WordPress to a custom-coded platform but also orchestrated a complete overhaul of their website design. Indie embodies a sleek, modern aesthetic that beautifully captures the comfort their studio provides. The site showcases their class offerings, seamlessly integrates with their Walla booking service, and is a prime example of our ability to transform and elevate web experiences.
 - name: Big Beef
-  description: |
-
-- name: Eye of the Soul Coaching
+  image:
+  id: 2 
   description: |
 
 - name: Travel Magaize
+  image:
+  id: 3 
   description: |
 
 - name: The Yoga Studio
+  image:
+  id: 4 
   description: |
 
-- name: Dance Kitchen
+- name: Eye of the Soul Coaching
+  image:
+  id: 5 
   description: |
 
 - name: RDavis Creations
+  image:
+  id: 6 
   description: |
 
 - name: Heaven Meets Earth Bali Retreat 2024
+  image:
+  id: 7 
+  description: |
+
+- name: Dance Kitchen
+  image:
+  id: 8 
   description: |
 
 - name: Waffl.Haus
+  image:
+  id: 9
   description: |

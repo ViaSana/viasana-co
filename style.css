@@ -106,6 +106,9 @@
     .textarea {
         @apply min-h-[6rem];
     }
+    .footer-title {
+        @apply capitalize opacity-100;
+    } 
 }
 
 @layer utilities {
