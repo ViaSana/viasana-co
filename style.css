@@ -33,6 +33,10 @@
     p:last-child{ @apply mb-0 }
 
     img { max-width: 100%; }
+
+    .bg-image {
+        @apply bg-center bg-no-repeat bg-cover;
+    }
 }
 
 
@@ -49,51 +53,11 @@
 
     #top-nav a {
         @apply hover:text-accent
-    }
+    }    
 
-    /* Background Images */
-    .bg-image {
-        @apply bg-center bg-no-repeat bg-cover;
-    }
-
-    .bg-plant {
-        background-image: url('/assets/images/plant.jpg');
-        background-position: 50% 43%;
-    }
-
-    .bg-plant-2 {
-        background-image: url('/assets/images/plant-2.jpg');
-        background-position: 75% 50%;
-    }
-    .bg-meeting {
-        background-image: url('/assets/images/MoJo.jpg');
-    }
-    .bg-mockup {
-        background-image: url('/assets/images/mockup.jpg');
-    }
-
-    .bg-flower_of_life {
-        background-image: url('/assets/images/flower_of_life.png');
-    }
-
-    .bg-laptop {
-        background-image: url('/assets/images/laptop-mockup-1.png');
-        background-position: center;
-    }
-
-    .bg-laptop-2 {
-        background-image: url('/assets/images/laptop-2.png');
-        background-position: center;
-    }
-
-    .bg-flower_blue {
-        background-image: url('/assets/images/flower_blue.png');
-        background-position: center;
-    }
-
+    /* Special Image Classes */
     .bg-mojo {
-        background-image: url('/assets/images/mojo_2.png');
-        @apply bg-center bg-no-repeat bg-cover;
+        background-image: url('/assets/images/mojo-wall.png');
     }
 
     @media (max-width: 640px) {

@@ -13,7 +13,7 @@ seo:
 {% include site_nav.html %}
 
 <!-- Section 1: Welcome Hero -->
-<div class="min-h-screen hero bg-base-200 bg-image bg-laptop min-h-90 mx-scrn">
+<div class="min-h-screen hero bg-base-200 bg-image mx-scrn px-5p" style="background-image: url('assets/images/home_hero.png')">
     <div class="flex-col hero-content lg:flex-row">
         <div class="max-lg:text-center text-primary">
             <div class="mb-2 font-serif text-xl italic">{{site.data._copy.section_1.welcome}}</div>
@@ -44,7 +44,7 @@ seo:
 </section>
 
 <!-- Section 3: Services  -->
-<div class="bg-mojo" id="services">
+<div class="bg-mojo bg-image" id="services">
     <div class="flex justify-end text-right max-sm:page-overlay p-5p">
         <div class="self-center max-w-xs sm:max-w-sm">
             <h2 class="text-success">{{site.data._copy.section_3.h2}}</h2>
@@ -55,13 +55,17 @@ seo:
 </div>
 
 <!-- Section 3 (cont.): Service Grid  -->
-<section class="grid sm:grid-cols-3 bg-secondary">
+<section class="relative grid overflow-hidden sm:grid-cols-3 bg-secondary">
+    <img src="assets/images/patterns/services-mandala.png" class="absolute sm:w-[45vw] aspect-square sm:-left-52 sm:-top-44 w-[90vw] -top-36 -left-36">
+    <img src="assets/images/patterns/services-mandala.png" class="absolute sm:w-[45vw] aspect-square sm:-right-52 sm:-bottom-56 w-[90vw] -bottom-36 -right-36">
+
     {% for service in site.data._copy.section_3.services %}
         <div class="p-5p text-success">
             <h4>{{ service.title }}</h4>
             <p>{{ service.description }}</p> 
         </div>
     {% endfor %}
+
 </section>
 
 <!-- Section 4: Why Choose Us + Icon Grid  -->
@@ -79,35 +83,41 @@ seo:
 </section>
 
 <!-- Section 5: Meet the Magic Makers  -->
-<section class="grid grid-cols-12 bg-accent">
-    <div class="self-center col-span-full md:col-span-7 pr-5p text-success">
-        <div class="mb-4">
+<section class="relative grid grid-cols-12 overflow-y-hidden bg-accent" id="about">
+    <div class="relative self-center col-span-full md:col-span-7 pr-5p text-success">
+        <!-- BG Pattern is set to relative position of text at two responsive points -->
+        <img src="assets/images/patterns/about-geoArrow.png" class="absolute max-w-[90vw] min-w-[200%] md:-top-72 md:-right-[30rem] top-0 right-0">
+        <div class="max-w-lg mb-4">
             <h2 class="pb-4">{{site.data._copy.section_5.h2}}</h2>
             <p>{{site.data._copy.section_5.p_1}}</p>
             <p>{{site.data._copy.section_5.p_2}}</p>
         </div>
     </div>
-    <div class="rounded-lg col-span-full md:col-span-5 bg-image bg-meeting aspect-portrait shadow-xl"></div> 
+
+    <div class="relative z-10 items-center rounded-lg shadow-xl col-span-full md:col-span-5 bg-image aspect-portrait" style="background-image: url(assets/images/mojo.jpg);">
+    </div> 
 </section>
 
 {% include cta.html %}
 
 <!-- Section 6: Featured Projects -->
 <section id="portfolio">
-    <h2 class="text-center text-primary pb-12">{{site.data._copy.section_6.h2}}</h2>
+    <h2 class="pb-12 text-center text-primary">{{site.data._copy.section_6.h2}}</h2>
     <div class="grid grid-cols-12 pb-12">
         <div class="self-center sm:col-span-5 col-span-full p-5p max-sm:order-2">
             <h3 class="text-primary">{{site.data._copy.section_6.h3_a}}</h3>
             <p class="text-primary">{{site.data._copy.section_6.p_1}}</p>
-            <a href="http://wisdoms-way.com" role="button" class="btn btn-primary">Go to site</a>
+            <div class="flex flex-row-reverse">
+                <a href="http://wisdoms-way.com" role="button" class="btn btn-primary">Go to site</a>
+            </div>
         </div>
-        <div class="relative self-center sm:col-span-7 col-span-full p-5p ">
+        <div class="relative self-center sm:col-span-7 col-span-full p-5p">
             <img src="assets/portfolio/ww_MacBook.png" alt="wisdoms way project">
             <!-- <img src="assets/portfolio/ww_iPhone.png" alt="wisdoms way project - mobile" class="absolute -right-20 h-[80%] -bottom-4"> -->
         </div>
 
     </div>
-    <div class="grid grid-cols-12 md:flex-row-reverse pb-12">
+    <div class="grid grid-cols-12 pb-12 md:flex-row-reverse">
         <div class="relative self-center sm:col-span-7 col-span-full p-5p ">
             <img src="assets/portfolio/indie_MacBook.png" alt="Indie Yoga project">
             <!-- <img src="assets/portfolio/indie_Phone.png" alt="Indie Yoga project - mobile" class="absolute right-24 h-[80%] -bottom-4"> -->
@@ -116,7 +126,9 @@ seo:
         <div class="self-center sm:col-span-5 col-span-full p-5p">
             <h3 class="text-primary">{{site.data._copy.section_6.h3_b}}</h3>
             <p class="text-primary">{{site.data._copy.section_6.p_2}}</p>
-            <a href="http://yoga.viasana.co" role="button" class="btn btn-primary"> Go to site</a>
+            <div class="flex flex-row-reverse">
+                <a href="http://yoga.viasana.co" role="button" class="btn btn-primary">Go to site</a>
+            </div>
         </div>
     </div>
 </section> 
