@@ -1,20 +1,22 @@
 
-<footer class="p-5p footer bg-neutral text-success">
+<footer class="relative overflow-hidden p-5p footer bg-neutral text-success">
+    <img src="assets/images/patterns/footer-yantra.png" class="absolute sm:bottom-[22%] -right-[15%] sm:w-[40vw] w-[60vw] bottom-[40%] opacity-50">
+
     <aside>
-        <img src="assets/images/logo_primary.png" class="max-w-[21vw] self-center"></img>  
+        <img src="assets/images/logo_primary.png" class="max-w-[30vh] self-center"></img>  
         <h3 class="mb-2 -mt-2 text-xl italic">Web Dev & Design Co-Op</h3>
         <p class="max-w-md">ViaSana, the place where technical expertise meets magic. As a web development co-op, we infuse your digital presence with authenticity, creativity, and inspiration, creating websites that reflect your brand identity and empower you to share your gifts with the world.</p>
     </aside> 
+
     <!-- Align to bottom right corner of footer -->
-    <nav>
-        <header class="text-2xl footer-title text-primary">Let's Connect.</header> 
-        <div class="grid -mt-4">
-            <a href="#"> <i class="text-3xl fab fa-instagram ml-[450%]"></i> </a>
-            <!-- Add email icon-->
-            <!-- Fix the left alignment -->
+    <nav class="z-10 place-self-end">
+        <header class="text-3xl footer-title">Let's Connect.</header> 
+        <div class="grid grid-cols-2 ml-auto -mt-4 text-3xl">
+            <a href="#" class="inline mx-2"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="inline mx-2"><i class="fa fa-envelope"></i></a>
         </div>
     </nav>
 </footer>
-<aside class="pb-2 text-center bg-neutral text-neutral-content">
-    <p class="subtle">Copyright © 2023 - ViaSana LLC</p>
-</aside>
+
+<!-- Copyright -->
+<div class="pb-2 text-center bg-neutral text-neutral-content"><p class="subtle">Copyright © 2023 - ViaSana LLC</p></div>
