@@ -10,15 +10,17 @@
       
       <!-- Contact Form -->
       <div class="self-center mt-4 grow"> 
-        <form class="grid max-w-lg p-4 mx-auto" method="post"> 
+
+        <form class="grid max-w-lg p-4 mx-auto" method="post" action="/success.html"> 
+
           <label for="name" class="font-serif text-success">Hello!</label>
-          <input type="text" placeholder="Name" id="name" class="w-full font-sans text-base input input-bordered input-primary placeholder-neutral" />
-          <input type="text" placeholder="Email" id="name" class="w-full mt-2 font-sans text-base input input-bordered input-primary placeholder-neutral" />
+          <input type="text" placeholder="Name" id="name" name="name" class="w-full font-sans text-base input input-bordered input-primary placeholder-neutral" />
+          <input type="text" placeholder="Email" id="email" name="email" class="w-full mt-2 font-sans text-base input input-bordered input-primary placeholder-neutral" />
     
           <label for="message" class="mt-2 font-serif text-success">How can we help? </label>
           <textarea class="font-sans text-base textarea textarea-primary placeholder-neutral" id="message" name="message" placeholder="Your message"></textarea>
     
-          <input type="hidden" name="inbox_key" value="contact-form">
+          <input type="hidden" name="inbox_key" value="launch-form">
           <input type="text" name="_gotcha" style="display: none;">
     
           <div class="text-right"> <input class="mt-4 btn btn-secondary" type="submit" value="submit" id="submitBtn"/> </div>
