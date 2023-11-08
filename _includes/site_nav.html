@@ -1,28 +1,40 @@
 <div class="font-serif px-5p navbar bg-base-100 mx-scrn max-md:hidden text-primary">
   <div class="flex-1">
-    <a href="/home"><img src="assets/images/logo_primary.png" class="max-w-[55%]" /></a>
+    <a href="/"><img src="assets/images/logo_primary.png" class="max-w-[55%]" /></a>
   </div>
   <div class="flex-none mb-2">
     <ul class="px-1 menu menu-horizontal" id="top-nav">
-      <li><a href="/home#services">Services</a></li>
-      <li><a href="/home#why-us">Why Us</a></li>
-      <li><a href="/home#about">About</a></li>
-      <li><a href="/home#portfolio">Portfolio</a></li>
-      <li><a href="/home#contact">Contact</a></li>
+      <li><a href="/#services">Services</a></li>
+      <li><a href="/#why-us">Why Us</a></li>
+      <li><a href="/#about">About</a></li>
+      <li><a href="/#portfolio">Portfolio</a></li>
+      <li><a href="/#contact">Contact</a></li>
     </ul>
   </div>
 </div>
 
 <!-- Responsive Menu -->
 <div class="navbar bg-base-100 md:hidden">
-  <div class="flex-1">
-    <a href="/home"><img src="assets/images/logo_primary.png" class="p-2" /></a>
+  <!-- Logo -->
+  <div class="flex-1 mt-2">
+    <a href="/"><img src="assets/images/logo_primary.png" class="p-2 max-w-[50%]" /></a>
   </div>
-  <div class="flex-none mb-2">
+  <!-- Hamburger Button -->
+  <div class="flex-none m-2">
     <label class="btn btn-circle swap swap-rotate">
       <!-- this hidden checkbox controls the state  --><input type="checkbox" />
-      <!-- hamburger icon                           --><svg class="fill-current swap-off" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"/></svg>
-      <!-- close icon                               --><svg class="fill-current swap-on" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49"/></svg>
+      <!-- hamburger icon                           --><svg class="fill-current swap-off hamburger-button" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"/></svg>
+      <!-- close icon                               --><svg class="fill-current swap-on hamburger-button" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49"/></svg>
     </label>
   </div>
+  <div class="mobile-menu">
+      <nav class="pt-4">
+        <a href="/#services">Services</a>
+        <a href="/#why-us">Why Us</a>
+        <a href="/#about">About</a>
+        <a href="/#portfolio">Portfolio</a>
+        <a href="/#contact">Contact</a>
+      </nav>
+  </div>
+
 </div>

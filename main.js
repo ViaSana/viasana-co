@@ -9,3 +9,9 @@ mainHeading.forEach(object => {
         ease: "power2",
     })
 })
+
+// Hamburger Menu
+$('.hamburger-button').click(function(){
+    $('.mobile-menu').fadeToggle(100);
+    console.log("wtf");
+});
