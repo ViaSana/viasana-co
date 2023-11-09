@@ -13,15 +13,15 @@ seo:
 {% include site_nav.html %}
 
 <!-- Section 1: Welcome Hero -->
-<section class="min-h-90 hero bg-base-200 bg-image mx-scrn" style="background-image: url('assets/images/home_hero.png')">
+<section class="md:min-h-90 hero bg-base-200 bg-image mx-scrn" style="background-image: url('assets/images/home_hero.png')">
     <div class="flex-col hero-content lg:flex-row">
-        <div class="max-lg:text-center text-primary basis-1/2">
+        <div class="max-lg:text-center text-primary basis-1/2 animate-fade">
             <div class="mb-2 font-serif text-xl italic">{{site.data._copy.section_1.welcome}}</div>
             <h1 class="font-bold">{{site.data._copy.section_1.h1}}</h1>      
-            <h4 class="font-sans">{{site.data._copy.section_1.h4}}</h4>
+            <h4 class="mb-0 font-sans">{{site.data._copy.section_1.h4}}</h4>
             <a role="button" class="btn btn-primary" href="/#services">{{site.data._copy.section_1.btn.text}}</a>
         </div>
-        <div class="relative basis-1/2">
+        <div class="relative basis-1/2 animate-from-bottom">
             <img src="assets/portfolio/Yoga_MacBook.png" alt="Yoga Studio Site">
             <img src="assets/portfolio/Yoga_Phone-vid.gif" alt="Yoga Studio Mobile Page" class="absolute -right-8 md:-right-10 h-[80%] -bottom-4">
         </div>
@@ -33,12 +33,14 @@ seo:
     <div class="grid sm:grid-cols-2 mx-scrn text-accent">
         
         <div class="text-center max-sm:border-b-2 sm:border-r-2 border-accent p-5p">
-            <h4 class="mb-2"> <span class="text-2xl md:text-5xl"> ViaSana </span> <br> (Vee-uh-Sah-nuh) </h4>
-            <h5 class="inline px-2"><i>Via:</i> A Way </h5> 
-            <h5 class="inline px-2"><i>Sana:</i> Health </h5>
+            <div class="scroll-in-left">
+                <h4 class="mb-2"> <span class="text-2xl md:text-5xl"> ViaSana </span> <br> (Vee-uh-Sah-nuh) </h4>
+                <h5 class="inline px-2"><i>Via:</i> A Way </h5> 
+                <h5 class="inline px-2"><i>Sana:</i> Health </h5>
+            </div>
         </div>
 
-        <div class="grid content-center p-5p">
+        <div class="grid content-center p-5p scroll-in-right">
             <p>As fellow movement instructors, we totally get it. You’re busy making the world a healthier place, and tech stuff? Maybe not your jam. At ViaSana, we're here to make it easy. Just as the name suggests, we are your 'way to health' in the digital realm.
             </p>
         </div>
@@ -46,29 +48,28 @@ seo:
     </div>
 </section>
 
-<!-- Section 3: Services  -->
+<!-- Section 3: Our Services  -->
 <div class="bg-mojo bg-image" id="services">
     <div class="flex justify-end text-right max-sm:page-overlay p-5p">
         <div class="self-center max-w-xs sm:max-w-sm">
             <h2 class="text-success">{{site.data._copy.section_3.h2}}</h2>
             <p class="text-success">{{site.data._copy.section_3.p}}</p>
-            <a role="button" class="btn btn-primary" href="/#contact">{{site.data._copy.section_3.btn.text}}</a>
+            <a role="button" class="mt-2 btn btn-primary" href="/#contact">{{site.data._copy.section_3.btn.text}}</a>
         </div>
     </div>
 </div>
 
 <!-- Section 3 (cont.): Service Grid  -->
-<section class="relative grid overflow-hidden sm:grid-cols-3 bg-secondary">
-    <img src="assets/images/patterns/services-mandala.png" class="absolute sm:w-[45vw] aspect-square sm:-left-52 sm:-top-44 w-[90vw] -top-36 -left-36">
-    <img src="assets/images/patterns/services-mandala.png" class="absolute sm:w-[45vw] aspect-square sm:-right-52 sm:-bottom-56 w-[90vw] -bottom-36 -right-36">
+<section class="relative grid overflow-hidden sm:grid-cols-3 bg-secondary slide-in-left">
+    <img src="assets/images/patterns/services-mandala.png" class="absolute sm:w-[50vw] aspect-square md:-left-52 md:-top-44 w-[85vw] -top-36 -left-36">
+    <img src="assets/images/patterns/services-mandala.png" class="absolute sm:w-[50vw] aspect-square md:-right-52 md:-bottom-56 w-[85vw] -bottom-36 -right-36">
 
     {% for service in site.data._copy.section_3.services %}
-        <div class="p-5p text-success">
+        <div class="p-5p text-success {% cycle 'slide-in-left_1', 'slide-in-left_2', 'slide-in-left_3'  %}">
             <h4>{{ service.title }}</h4>
             <p>{{ service.description }}</p> 
         </div>
     {% endfor %}
-
 </section>
 
 <!-- Section 4: Why Choose Us + Icon Grid  -->
@@ -78,7 +79,7 @@ seo:
     <!-- Loop for "why-choose-us.yml" (Icon, Title, and Text) -->
     {% for item in site.data.why-choose-us.choose_us limit:4 %}
     <div class="col-span-2 sm:col-span-1 min-h-[220px]">
-        <img src="{{ item.icon }}"> 
+        <img src="{{ item.icon }}" class="choose-icon"> 
         <h4 class="px-1 text-primary">{{ item.title }}</h4>
         <p class="p-2 text-primary">{{ item.text }}</p>
     </div>
@@ -92,21 +93,19 @@ seo:
 
 <!-- Section 6: Featured Projects -->
 <section class="relative bg-center sm:bg-no-repeat bg-[length:52vw] bg-repeat-y" id="portfolio" style="background-image: url(assets/images/patterns/about-geoArrow2.png);">
-    <!-- BG Pattern is set to relative position of text at two responsive points -->
-    <!-- <img src="assets/images/patterns/about-geoArrow.png" class="mx-auto -z-10"> -->
     
-    <h2 class="pb-12 text-center text-primary">{{site.data._copy.section_6.h2}}</h2>
+    <h2 class="mb-0 text-center pb-5p text-primary">{{site.data._copy.section_6.h2}}</h2>
 
     <!-- Wisdom's Way Project -->
-    <div class="grid grid-cols-12 pb-12">
+    <div class="grid grid-cols-12 pb-5p">
         <div class="self-center sm:col-span-5 col-span-full p-5p max-sm:order-2">
             <h3 class="text-primary">{{site.data._copy.section_6.h3_a}}</h3>
-            <p class="text-primary">{{site.data._copy.section_6.p_1}}</p>
+            <p class="mb-0 text-primary">{{site.data._copy.section_6.p_1}}</p>
             <div class="flex flex-row-reverse">
                 <a href="http://wisdoms-way.com" role="button" class="btn btn-primary">Go to site</a>
             </div>
         </div>
-        <div class="relative self-center sm:col-span-7 col-span-full p-5p">
+        <div class="relative self-center sm:col-span-7 col-span-full p-5p scroll-in-right">
             <img src="assets/portfolio/ww_MacBook.png" alt="wisdoms way project">
             <!-- <img src="assets/portfolio/ww_iPhone.png" alt="wisdoms way project - mobile" class="absolute -right-20 h-[80%] -bottom-4"> -->
         </div>
@@ -114,15 +113,15 @@ seo:
     </div>
 
     <!-- Indie Project -->
-    <div class="grid grid-cols-12 pb-12 md:flex-row-reverse">
-        <div class="relative self-center sm:col-span-7 col-span-full p-5p ">
+    <div class="grid grid-cols-12 md:flex-row-reverse">
+        <div class="relative self-center sm:col-span-7 col-span-full p-5p scroll-in-left">
             <img src="assets/portfolio/indie_MacBook.png" alt="Indie Yoga project">
             <!-- <img src="assets/portfolio/indie_Phone.png" alt="Indie Yoga project - mobile" class="absolute right-24 h-[80%] -bottom-4"> -->
         </div>
         
         <div class="self-center sm:col-span-5 col-span-full p-5p">
             <h3 class="text-primary">{{site.data._copy.section_6.h3_b}}</h3>
-            <p class="text-primary">{{site.data._copy.section_6.p_2}}</p>
+            <p class="mb-0 text-primary">{{site.data._copy.section_6.p_2}}</p>
             <div class="flex flex-row-reverse">
                 <a href="https://casual-tarsier.cloudvent.net/" role="button" class="btn btn-primary">Go to site</a>
             </div>
