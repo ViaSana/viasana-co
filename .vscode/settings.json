@@ -1,11 +1,11 @@
 {
     "favorites.resources": [
         {
-            "filePath": "_data/site-settings.yml",
+            "filePath": "style.css",
             "group": "Default"
         },
         {
-            "filePath": "style.css",
+            "filePath": "index.html",
             "group": "Default"
         }
     ]

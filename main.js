@@ -23,7 +23,7 @@
 const mojo = document.querySelector("#mojo-star")
 gsap.to(mojo, {
     duration: 1.5,
-    scale: .97,
+    scale: .80,
     repeat: -1, // repeat indefinitely
     yoyo: true, // animate back and forth
     ease: "sine.inOut" // use a sine easing
